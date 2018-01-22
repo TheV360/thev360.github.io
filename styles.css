@@ -5,3 +5,14 @@
 	padding: 0;
 	border: 0;
 }
+
+/* Layout */
+
+body {
+	background-color: #000000;
+}
+
+.container {
+	margin: 0 auto;
+	background-color: #1f1f1f;
+}
