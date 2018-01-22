@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 /* Reset everything */
 
 * {
@@ -13,7 +16,7 @@ body {
 }
 
 .container {
-	margin: 0 auto;
+	margin: 1em auto;
 	padding: 1em;
 	
 	max-width: 64em;
@@ -21,5 +24,10 @@ body {
 	color: #ffffff;
 	background-color: #1f1f1f;
 	
-	font-family: monospace;
+	font-family: 'Source Code Pro',monospace;
+}
+
+h1 {
+	font-size: 4em;
+	font-weight: bold;
 }
