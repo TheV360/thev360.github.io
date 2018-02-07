@@ -26,14 +26,14 @@ h1:after {
 	color: #ffffff;
 	opacity: 1;
 	
-	animation: linear 2s infinite alternate cursorBlink;
+	animation: linear 1s infinite alternate cursorBlink;
 }
 
 @keyframes cursorBlink {
-	from {
+	0% {
 		opacity: 0;
 	}
-	to {
+	75% {
 		opacity: 1;
 	}
 }
