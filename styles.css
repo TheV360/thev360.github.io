@@ -28,6 +28,19 @@ img {
 	max-width: 100%;
 }
 
+/* Link colors */
+a:link {
+	color: #dfdfff;
+}
+
+a:visited {
+	color: #bfbfdf;
+}
+
+a:link {
+	color: #bfdfff;
+}
+
 /* Classes */
 
 .container {
