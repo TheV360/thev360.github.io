@@ -26,7 +26,7 @@ h1:after {
 	color: #ffffff;
 	opacity: 1;
 	
-	animation: linear 1s infinite alternate cursorBlink;
+	animation: ease-in-out 1s infinite alternate cursorBlink;
 }
 
 @keyframes cursorBlink {
