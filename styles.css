@@ -20,6 +20,24 @@ h1 {
 	font-weight: bold;
 }
 
+h1:after {
+	content: "_";
+	
+	color: #ffffff;
+	opacity: 1;
+	
+	animation: linear 2s infinite alternate cursorBlink;
+}
+
+@keyframes cursorBlink {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 p {
 	text-indent: 2em;
 }
