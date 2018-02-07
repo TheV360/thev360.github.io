@@ -20,6 +20,14 @@ h1 {
 	font-weight: bold;
 }
 
+p {
+	text-indent: 2em;
+}
+
+ul {
+	margin-left: 2.5em;
+}
+
 img {
 	margin: 0 auto;
 	display: block;
