@@ -20,7 +20,7 @@ h1 {
 	font-weight: bold;
 }
 
-h1:after {
+h1:after, .cursorBlink:after {
 	content: "_";
 	
 	color: #ffffff;
@@ -33,10 +33,7 @@ h1:after {
 	0% {
 		opacity: 0;
 	}
-	25% {
-		opacity: 0;
-	}
-	75% {
+	50% {
 		opacity: 1;
 	}
 	100% {
