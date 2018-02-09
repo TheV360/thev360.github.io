@@ -17,7 +17,7 @@
 				if (/^[\u0020-\u007e\u00a0-\u00ff]*$/.test(key)) {
 					typing.style.wordWrap = "break-word";
 					typing.innerHTML = typing.innerHTML + key;
-				} else if (e.charCode == 8 && typing.innerHTML.length > 0) {
+				} else if (e.keyCode == 8 && typing.innerHTML.length > 0) {
 					typing.innerHTML = typing.innerHTML.substring(0, innerHTML.length - 2);
 				}
 			}
