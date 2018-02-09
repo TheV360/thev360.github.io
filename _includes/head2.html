@@ -12,14 +12,13 @@
 			document.onkeypress = function(e) {
 				var key = String.fromCharCode(e.charCode);
 				
-				console.log(e.charCode);
-				
 				if (/^[\u0020-\u007e\u00a0-\u00ff]*$/.test(key)) {
 					typing.style.wordWrap = "break-word";
 					typing.innerHTML = typing.innerHTML + key;
 				} else if (e.keyCode == 8 && typing.innerHTML.length > 0) {
 					typing.innerHTML = typing.innerHTML.substring(0, typing.innerHTML.length - 1);
 				}
+				event.preventDefault();
 			}
 		</script>
 	</head>
