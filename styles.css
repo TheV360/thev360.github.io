@@ -20,7 +20,7 @@ h1 {
 	font-weight: bold;
 }
 
-h1:after, .cursorBlink:after {
+#typing:after {
 	content: "_";
 	
 	color: #ffffff;
