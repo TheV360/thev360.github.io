@@ -6,7 +6,7 @@
 			window.onload = function() {
 				typing = document.getElementById("typing");
 				
-				document.keydown = function(e) {
+				document.onkeypress = function(e) {
 					var key = String.fromCharCode(e.keyCode);
 					if (/[a-zA-Z0-9-_ ]/.test(key))
 						typing.innerHTML = typing.innerHTML + key;
