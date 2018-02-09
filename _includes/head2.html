@@ -10,9 +10,7 @@
 			}
 			
 			document.onkeypress = function(e) {
-				var key = String.fromCharCode(e.keyCode);
-				
-				console.log(key);
+				var key = String.fromCharCode(e.charCode);
 				
 				if (/[a-zA-Z0-9-_ ]/.test(key)) {
 					typing.style.wordWrap = "break-word";
