@@ -12,9 +12,11 @@
 			document.onkeypress = function(e) {
 				var key = String.fromCharCode(e.charCode);
 				
-				if (/[a-zA-Z0-9-_ ]/.test(key)) {
+				if (/^[\u0020-\u007e\u00a0-\u00ff]*$/.test(key)) {
 					typing.style.wordWrap = "break-word";
 					typing.innerHTML = typing.innerHTML + key;
+				} else if (e.charCode == 8 && typing.innerHTML.length > 0) {
+					typing.innerHTML = typing.innerHTML.substring(0, innerHTML.length - 2);
 				}
 			}
 		</script>
