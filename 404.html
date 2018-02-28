@@ -1,20 +1,14 @@
 ---
+layout: null
 permalink: /404.html
 ---
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8" />
-		<title id="hell">dang it</title>
+{% include head1.html %}404{% include head2.html %}
 		<script>
-			var words = ["failure","dang it","sorry","whooooops","aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","</title><p>butt</p>"];
-			document.getElementById("hell").innerHTML = words[Math.floor(Math.random() * words.length)];
+			var words = ["failure","dang it","sorry","whooooops","aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","what the heck"];
+			document.getElementsByTagName("title")[0].innerHTML = words[Math.floor(Math.random() * words.length)];
 		</script>
-	</head>
-	<body>
 		<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/da2r5L9azaA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		<h1>how did you get here</h1>
 		<p>i thought my site worked well</p>
 		<a href="https://thev360.github.io/">return to the working part of the site</a>
-	</body>
-</html>
+{% include footer.html %}
