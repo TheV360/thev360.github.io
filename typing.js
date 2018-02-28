@@ -14,9 +14,6 @@ window.onload = function() {
 		text = text.replace(/\\/gim, "\\\\");
 		text = text.replace(/<br[^<>]*>/gim, "\n");
 		
-		// Remove Javascript tags with this mess - stackoverflow.com/a/18052486
-		text = text.replace(/<script(?:(?!\/\/)(?!\/\*)[^'"]|"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|\/\/.*(?:\n)|\/\*(?:(?:.|\s))*?\*\/)*?<\/script>/gim, "\n");
-		
 		// Remove entities
 		check.innerHTML = text;
 		text = check.textContent;
