@@ -10,8 +10,7 @@ window.onload = function() {
 		
 		typing.style.wordWrap = "break-word";
 		
-		// Make breaks into newlines and escape those backslashes
-		text = text.replace(/\\/gim, "\\\\");
+		// Make breaks into newlines
 		text = text.replace(/<br[^<>]*>/gim, "\n");
 		
 		// Remove entities
@@ -28,8 +27,7 @@ window.onload = function() {
 		}
 		e.preventDefault();
 		
-		// Make newlines into breaks and unescape the backslashes
-		text = text.replace(/\\\\/gim, "\\");
+		// Make newlines into breaks
 		text = text.replace(/\n|\r/gim, "<br />");
 		
 		// Good
