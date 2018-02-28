@@ -31,7 +31,8 @@ window.onload = function() {
 		}
 		e.preventDefault();
 		
-		// Make newlines into breaks
+		// Make newlines into breaks and unescape the backslashes
+		text = text.replace(/\\\\/gim, "\\");
 		text = text.replace(/\n|\r/gim, "<br />");
 		
 		// Good
