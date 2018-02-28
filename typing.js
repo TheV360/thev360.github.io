@@ -10,8 +10,6 @@ window.onload = function() {
 			var key = String.fromCharCode(e.charCode);
 			var text = typing.innerHTML;
 
-			typing.style.wordWrap = "break-word";
-
 			// Make breaks into newlines
 			text = text.replace(/<br[^<>]*>/gim, "\n");
 
