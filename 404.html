@@ -7,10 +7,9 @@ permalink: /404.html
 		<script>
 			var words = ["failure","dang it","sorry","whooooops","aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","what the heck"];
 			document.getElementsByTagName("title")[0].innerHTML = words[Math.floor(Math.random() * words.length)];
-			document.getElementById("typing").innerHTML = window.location.pathname;
+			document.getElementById("typing").innerHTML = window.location.pathname.substring(1) + " isn't on my site, sorry.";
 		</script>
 		<iframe src="https://www.youtube-nocookie.com/embed/da2r5L9azaA?rel=0&amp;controls=0&amp;showinfo=0" style="width: 100%; height: auto;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		<h1>How did you get here</h1>
-		<p>i thought my site worked well</p>
+		<p>how did you get here, i thought my site worked well</p>
 		<a href="https://thev360.github.io/">return to the working part of the site</a>
 {% include footer.html %}
