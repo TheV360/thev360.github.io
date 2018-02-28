@@ -11,7 +11,7 @@ permalink: /404.html
 			
 			// sorry, not on my site!
 			var url = window.location.pathname.substring(1);
-			try { url = decodeURI(url); }
+			try { url = decodeURI(url); } catch {}
 			if (url.match(/<[a-z][\s\S]*>/gim)) url = "This URL XSS vulnerability";
 			document.getElementById("typing").innerHTML = url + " isn't on my site, sorry.";
 		</script>
