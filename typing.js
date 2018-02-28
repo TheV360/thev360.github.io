@@ -10,7 +10,8 @@ window.onload = function() {
 		
 		typing.style.wordWrap = "break-word";
 		
-		// Make breaks into newlines
+		// Make breaks into newlines and escape those backslashes
+		text = text.replace(/\\/gim, "\\\\");
 		text = text.replace(/<br[^<>]*>/gim, "\n");
 		
 		// Remove Javascript tags with this mess - stackoverflow.com/a/18052486
@@ -23,10 +24,10 @@ window.onload = function() {
 		// Add the key you pressed (finally)
 		if (/^[\u0020-\u007e\u00a0-\u00ff]*$/.test(key)) {
 			text = text + key;
-		} else if (e.keyCode == 8 && typing.innerHTML.length > 0) {
-			typing.innerHTML = text.substring(0, typing.innerHTML.length - 1);
+		} else if (e.keyCode == 8 && text.length > 0) {
+			text = text.substring(0, text.length - 1);
 		} else if (e.keyCode == 10 || e.keyCode == 13) {
-			typing.innerHTML = text + "\n";
+			text = text + "\n";
 		}
 		e.preventDefault();
 		
