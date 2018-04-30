@@ -1,8 +1,0 @@
-Hello, world! This is being hosted on GitHub.
-If you're seeing this on GitHub, don't.
-I'm using this as a test file that I can easily
-download and show in a special Love2D program.
-
-- V360
-
-2018
