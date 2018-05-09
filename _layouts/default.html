@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<title>V360 &ndash; {{ page.title }}</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link type="text/css" rel="stylesheet" href="styles.css" />
+		<script type="text/ecmascript" src="typing.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				{% include header.html %}
+			</div>
+		</header>
+		<article class="container">
+			{{ content }}
+		</article>
+		<footer>
+			<div class="container">
+				{% include footer.html %}
+			</div>
+		</footer>
+	</body>
+</html>

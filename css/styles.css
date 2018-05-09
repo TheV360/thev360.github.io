@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro');
 
 /* Reset everything */
 
@@ -12,7 +12,7 @@
 /* Layout */
 
 body {
-	background-color: #000000;
+	background-color: black;
 }
 
 h1 {
@@ -20,12 +20,17 @@ h1 {
 	font-weight: bold;
 	
 	word-break: break-word;
+	
+	font-family: 'Source Code Pro', monospace;
+}
+h1:not(:first-child) {
+	margin-top: .5rem;
 }
 
 #typing:after {
 	content: "_";
 	
-	color: #ffffff;
+	color: white;
 	opacity: 1;
 	
 	animation: ease-in-out 1s infinite cursorBlink;
@@ -63,11 +68,9 @@ img {
 a:link {
 	color: #dfdfff;
 }
-
 a:visited {
 	color: #bfbfdf;
 }
-
 a:hover {
 	color: #bfdfff;
 }
@@ -75,20 +78,34 @@ a:hover {
 /* Classes */
 
 .container {
-	margin: 1em auto;
-	padding: 1em;
+	margin: 1rem auto;
 	
-	max-width: 64em;
+	max-width: 64rem;
 	
 	color: #efefef;
 	background-color: #1f1f1f;
-	
-	font-family: 'Source Code Pro',monospace;
+}
+.container > :not(.parallax) {
+	padding: 1rem;
 }
 
-.fullwidth {
-	padding: 0;
-	margin: 0;
+/* Parallax */
+.parallax {
+	display: block;
+	
+	height: 75vh;
+	
+	background-image: linear-gradient(#1f1f1f, black);
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
+	transition: background-size 1s ease-in-out;
+}
+.parallax:hover {
+	background-size: 150%;
 }
 
 /* media stuff */
