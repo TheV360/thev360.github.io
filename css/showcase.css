@@ -1,0 +1,54 @@
+/* Showcases */
+.showcase {
+	background-color: black;
+	background-size: cover;
+	
+	border-bottom: solid var(--thin-border-size) var(--thin-border-color);
+}
+
+:not(.showcase) + .showcase {
+	border-top: solid var(--thin-border-size) var(--thin-border-color);
+}
+
+.showcase .showcase-content {
+	padding: 1rem;
+	
+	min-width: 16rem;
+	min-height: 32rem;
+	
+	width: 40vw;
+	
+	max-width: 32rem;
+	
+	background-color: #3f3f3fcf;
+}
+
+/* Alternating sides */
+.showcase:nth-child(odd) {
+	background-position: left center;
+}
+
+.showcase:nth-child(even) {
+	background-position: right center;
+}
+
+.showcase:nth-child(odd) .showcase-content {
+	float: left;
+	
+	border-right: solid var(--thin-border-size) var(--thin-border-color);
+}
+
+.showcase:nth-child(even) .showcase-content {
+	float: right;
+	
+	border-left: solid var(--thin-border-size) var(--thin-border-color);
+}
+
+/* Alternating Sides and Buttonlikes */
+.showcase:nth-child(odd) .showcase-content div.button-set {
+	text-align: right;
+}
+
+.showcase:nth-child(even) .showcase-content div.button-set {
+	text-align: left;
+}

@@ -1,21 +1,9 @@
 ---
-layout: null
-permalink: /404.html
+layout: default
+
+title: 404
 ---
-{% include head1.html %}404{% include head2.html %}
-		<h1 id="typing"></h1>
-		<script>
-			// random title
-			var words = ["failure","dang it","sorry","whooooops","aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","what the heck"];
-			document.getElementsByTagName("title")[0].innerHTML = words[Math.floor(Math.random() * words.length)];
-			
-			// sorry, not on my site!
-			var url = window.location.pathname.substring(1);
-			try { url = decodeURI(url); } catch {}
-			if (url.match(/<[a-z][\s\S]*>/gim)) url = "This URL XSS vulnerability";
-			document.getElementById("typing").innerHTML = url + " isn't on my site, sorry.";
-		</script>
-		<!--<iframe src="https://www.youtube-nocookie.com/embed/da2r5L9azaA?rel=0&amp;controls=0&amp;showinfo=0" style="width: 100%; height: auto;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-		<p>how did you get here, i thought my site worked well</p>
-		<a href="https://thev360.github.io/">return to the working part of the site</a>
-{% include footer.html %}
+<div class="container">
+	<h2>404</h2>
+	<p>e.</p>
+</div>
