@@ -1,25 +1,43 @@
 ---
-layout: null
+layout: home
+
+title: home
 ---
-{% include head1.html %}V360's site{% include head2.html %}
-		<h1 id="typing">Welcome to my site</h1>
-		<p>Hello, I'm V360. I'm a fan of programming in SmileBASIC, PICO-8, and Love2D, but I also sometimes make projects like these ones listed below. I hope you like them</p>
-		<br />
-		<ul>
-			<li><a href="CreateFour/">Create Four</a> - Interactive Connect Four Box Art (<a href="https://www.reddit.com/r/me_irl/comments/7w06uq/meirl/">Reddit (21.1k votes)</a>, <a href="https://twitter.com/ItMeIRL/status/961447744568266752">Twitter (1,485 likes)</a>)</li>
-			<li><a href="InternetTrashCan/">Internet Trash Can</a> - Throw Some Images In The Trash</li>
-			<li><a href="NewerTab/">NewerTab</a> - Better new tab page, modern ａｅｓｔｈｅｔｉｃ (also, here's the <a href="NewTab/">awful older version</a>)</li>
-		</ul>
-		<br />
-		<h2>Non-github stuff</h2>
-		<ul>
-			<li>REALLY GREAT RPG - A Parody of Miiverse RPGs - SmileBASIC Key: MKSKX4R6</li>
-		</ul>
-		<br />
-		<h2>Site overhaul</h2>
-		<p>
-			Soon I'm gonna fix my dang site. It'll have some better styling.
-		</p>
-		<br />
-		<a href="https://github.com/TheV360">Github Profile</a>
-{% include footer.html %}
+
+			<div class="container">
+				<div id="profile-container">
+					<img id="profile" src="/img/ProfilePicture.jpg" />
+				</div>
+				<h2>Hello, world!</h2>
+				<p>I'm V360, a person that has no idea what they're doing with their life.</p>
+				<p> Here's a few things I made:</p>
+			</div>
+			<div class="showcase" style="background-image: url('/img/NewerTab.png');">
+				<div class="showcase-content">
+					<h3>NewerTab</h3>
+					<p>This is a fully-customizable new tab page. It has Reddit and Tumblr integration too, so you can automatically get your favorite posts as your background every time you open a tab.</p>
+					<div class="button-set">
+						<a class="buttonlike button-primary" href="https://thev360.gitlab.io/NewerTab/">Check it out!</a>
+						<a class="buttonlike" href="https://gitlab.com/TheV360/NewerTab/">See code</a>
+					</div>
+				</div>
+			</div>
+			<div class="showcase" style="background-image: url('/img/CreateFour.png');">
+				<div class="showcase-content">
+					<h3>Create Four</h3>
+					<p>Have you ever wanted to program for a computer whose <span title="Don't forget the three text labels that I really should've made static!">only output*</span> is a 7x6 4-color Connect Four board that defies gravity? No? Too bad, here's exactly that.</p>
+					<div class="button-set">
+							<a class="buttonlike button-primary" href="https://thev360.gitlab.io/CreateFour/">Check it out!</a>
+							<a class="buttonlike" href="https://gitlab.com/TheV360/CreateFour/">See code</a>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<h2>Social Media</h2>
+				<ul class="grid2">
+					<li><a href="https://twitter.com/TheV360gameDev">Twitter</a><span class="unimportant"> &ndash; @TheV360gameDev</span></li>
+					<li><a href="https://reddit.com/u/TheV360">Reddit</a><span class="unimportant"> &ndash; /u/TheV360</span></li>
+					<li><a href="https://github.com/TheV360">GitHub</a><span class="unimportant"> &ndash; @TheV360</span></li>
+					<li><a href="https://gitlab.com/TheV360">GitLab</a><span class="unimportant"> &ndash; @TheV360</span></li>
+				</ul>
+			</div>
