@@ -7,8 +7,10 @@
 	padding: 0;
 	border: 0;
 	outline: 0;
-
+	
 	box-sizing: border-box;
+	
+	scroll-behavior: smooth;
 }
 
 html, body {
@@ -23,7 +25,6 @@ html, body {
 	--thin-border-size: .125rem;
 	--thin-border-color: #1f1f1f;
 }
-
 
 body {
 	color: var(--text-color);
@@ -47,6 +48,8 @@ header {
 	background-color: black;
 	
 	overflow: hidden;
+	
+	z-index: 1;
 }
 
 header > div.container {
@@ -111,13 +114,43 @@ footer {
 
 /* Text layout */
 a {
+	display: inline-block;
+	position: relative;
+	
 	color: var(--link-color);
 	
 	text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
 	text-decoration: underline;
+} */
+
+a::after {
+	content: "";
+	
+	position: absolute;
+	bottom: 0;
+	display: block;
+	margin: 0 50%;
+	
+	width: 0;
+	height: .125rem;
+	
+	background-color: var(--link-color);
+	
+	transition: all .25s ease-out;
+	transition-property: width, margin;
+}
+
+.here a::after {
+	transition: none;
+}
+
+a:hover::after, .here a::after {
+	margin: 0;
+	
+	width: 100%;
 }
 
 h1, h2, h3 {
@@ -198,6 +231,10 @@ div.button-set {
 	cursor: pointer;
 }
 
+.buttonlike::after {
+	content: none;
+}
+
 .buttonlike.button-primary {
 	background-color: #1f3f7f;
 }
@@ -215,40 +252,6 @@ div.button-set {
 
 .buttonlike + .buttonlike {
 	margin-left: .25rem;
-}
-
-/* Grid 2x?s */
-ul.grid2 {
-	list-style-type: none;
-}
-
-ul.grid2 li {
-	display: inline-block;
-	
-	padding: 0 .5rem;
-	
-	border-bottom: solid var(--thin-border-size) var(--thin-border-color);
-	
-	width: 50%;
-	
-	text-align: center;
-}
-
-ul.grid2 li:nth-child(odd):not(:last-child) {
-	float: left;
-	
-	border-right: solid calc(var(--thin-border-size) / 2) var(--thin-border-color);
-}
-
-ul.grid2 li:nth-child(even) {
-	float: right;
-	
-	border-left: solid calc(var(--thin-border-size) / 2) var(--thin-border-color);
-}
-
-ul.grid2 li:last-child,
-ul.grid2 li:nth-last-child(2):nth-child(odd) {
-	border-bottom: none;
 }
 
 /* ClearFix */

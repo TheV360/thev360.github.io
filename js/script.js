@@ -1,6 +1,6 @@
 "use strict";
 
-var item;
+var i;
 var togglenav, nav, navitems;
 
 // Once page loads completely...
@@ -21,9 +21,10 @@ window.addEventListener("DOMContentLoaded", ()=>{
 		});
 		
 		// Unlink the page you're on
-		for (item in navitems.length) {
-			if (document.location.href == item.childNodes[0] || document.location.pathname == item.childNodes[0].href) {
-				item.innerHTML = item.childNodes[0].innerHTML;
+		for (i = 0; i < navitems.length; i++) {
+			if (document.location.href == navitems[i].childNodes[0].href || document.location.pathname == navitems[i].childNodes[0].href) {
+				// navitems[i].innerHTML = navitems[i].childNodes[0].innerHTML;
+				navitems[i].classList.add("here");
 			}
 		}
 	}
