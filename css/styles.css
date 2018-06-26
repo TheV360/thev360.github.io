@@ -266,6 +266,32 @@ ul.grid2::after {
 	clear: both;
 }
 
+/* Dumb scrollbar stuff */
+::-webkit-scrollbar {
+	width: 1rem;
+	
+	background: black;
+}
+::-webkit-scrollbar-track {
+	border-radius: .25rem;
+	
+	background: linear-gradient(to right, black, #1f1f1f);
+}
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-button {
+	border-radius: .25rem;
+	
+	background: linear-gradient(to right, #2f2f2f, #3f3f3f);
+}
+::-webkit-scrollbar-button {
+	height: 1rem;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+	border-radius: 0 0 .25rem .25rem;
+}
+::-webkit-scrollbar-button:vertical:increment {
+	border-radius: .25rem .25rem 0 0;
+}
+
 /* @medias */
 
 @media (max-width: 32rem) {
