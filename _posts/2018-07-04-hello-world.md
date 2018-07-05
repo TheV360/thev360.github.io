@@ -10,8 +10,8 @@ categories: test
 
 # Hello, world!
 
-This is just a test post to ensure that my Jekyll blog is working!
+This is just a test post to ensure that my Jekyll blog is working!<!--more-->
 
-<!--more-->This is a second paragraph! It's only shown in the actual post.
+This is a second paragraph! It's only shown in the actual post.
 
 ![A friend]({{ "/assets/friend.png" | absolute_url }})
