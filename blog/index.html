@@ -5,13 +5,15 @@ title: Blog
 ---
 
 			<div class="container">
+				<h2>Blog posts</h2>
 				<ul>
 					{% for post in site.posts %}
 						<hr />
 						<div>
-							<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-							<aside>{{ page.date }}</aside>
-							{{ post.excerpt }}
+							<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+							<aside>{{ page.date | date: "%B %d, %Y" }}</aside>
+							<blockquote>{{ post.excerpt }}</blockquote>
+							<p><a href="{{ post.url }}">Read more...</a></p>
 						</div>
 					{% endfor %}
 				</ul>
