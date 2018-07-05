@@ -1,9 +1,10 @@
 ---
-layout: post
-
 title: "Hello, world!"
+subtitle: "This is a test post"
 
 date: 2018-07-04
+
+tags: [Hello, World]
 ---
 
 This is just a test post to ensure that my Jekyll blog is working!<!--more-->

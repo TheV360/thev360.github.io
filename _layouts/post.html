@@ -9,6 +9,7 @@
 		<section>
 			<div class="container post">
 				<h2>{{ page.title }}</h2>
+				{% if page.subtitle %}<h4>{{ page.subtitle }}</h4>{% endif %}
 				<aside>{{ page.date | date: "%B %d, %Y" }}</aside>
 				{{ content }}
 				{% if page.tags.size > 0 %}<aside>Tag{% if page.tags.size > 1 %}s{% endif %}:  {{ page.tags | join: ", " }}</aside>{% endif %}
