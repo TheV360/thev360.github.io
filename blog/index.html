@@ -5,7 +5,7 @@ title: Blog
 ---
 
 			<div class="container">
-				<h2>Blog{% if paginator.total_pages > 1 %} (page {% paginator.page %} of {{ paginator.total_pages }}){% endif %}</h2>
+				<h2>Blog{% if paginator.total_pages > 1 %} (page {{ paginator.page }} of {{ paginator.total_pages }}){% endif %}</h2>
 				<div>
 					{% for post in paginator.posts %}
 						<hr />
