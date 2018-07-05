@@ -5,9 +5,9 @@ title: Blog
 ---
 
 			<div class="container">
-				<h2>Blog posts</h2>
-				<ul>
-					{% for post in site.posts %}
+				<h2>Blog{% if paginator.total_pages > 1 %} (page {% paginator.page %} of {% paginator.total_pages %}){% endif %}</h2>
+				<div>
+					{% for post in paginator.posts %}
 						<hr />
 						<div>
 							<h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
@@ -16,5 +16,5 @@ title: Blog
 							<!-- <p class="read-more"><a href="{{ post.url }}">Read More...</a></p> -->
 						</div>
 					{% endfor %}
-				</ul>
+				</div>
 			</div>
