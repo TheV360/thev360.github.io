@@ -245,7 +245,7 @@ div.button-set {
 }
 
 .buttonlike:link, .buttonlike:visited {
-	color: var(--text-color);
+	color: white;
 }
 
 .buttonlike::after {
