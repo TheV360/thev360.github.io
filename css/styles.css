@@ -218,6 +218,14 @@ ul {
 	list-style-position: inside;
 }
 
+.pagination-previous {
+	float: left;
+}
+
+.pagination-next {
+	float: right;
+}
+
 /* General nav layouts */
 nav ul,
 nav li {
@@ -308,7 +316,8 @@ div.button-set {
 /* ClearFix */
 header::after,
 .container::after,
-.showcase::after {
+.showcase::after,
+.pagination-controls::after {
 	content: "";
 	
 	display: block;

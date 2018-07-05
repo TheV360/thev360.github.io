@@ -17,4 +17,11 @@ title: Blog
 						</div>
 					{% endfor %}
 				</div>
+				{% if paginator.total_pages > 1 %}
+					<hr />
+					<div id="pagination-controls">
+						{% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}" class="pagination-previous">Previous</a>{% endif %}
+						{% if paginator.next_page %}<a href="{{ paginator.next_page_path }}" class="pagination-next">Next</a>{% endif %}
+					</div>
+				{% endif %}
 			</div>
