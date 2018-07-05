@@ -9,7 +9,7 @@
 		<section>
 			<div class="container">
 				<h2>{{ page.title }}</h2>
-				<aside>{{ page.date }}</aside>
+				<aside>{{ page.date | date: "%B %d, %Y" }}</aside>
 				{{ content }}
 			</div>
 		</section>

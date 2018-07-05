@@ -11,9 +11,9 @@ title: Blog
 						<hr />
 						<div>
 							<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-							<aside>{{ page.date | date: "%B %d, %Y" }}</aside>
+							<aside>{{ post.date | date: "%B %d, %Y" }} &ndash; {{ post.tags | join: ", " }}</aside>
 							<blockquote>{{ post.excerpt }}</blockquote>
-							<p><a href="{{ post.url }}">Read more...</a></p>
+							<p><a href="{{ post.url }}">Read More...</a></p>
 						</div>
 					{% endfor %}
 				</ul>

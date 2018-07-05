@@ -167,6 +167,10 @@ h2 { font-size: 2rem; font-weight: 300; font-weight: 200; }
 h3 { font-size: 1.75rem; font-weight: 300; }
 
 hr {
+	margin: .5rem 0;
+	
+	height: .125rem;
+	
 	background-color: #2f2f2f;
 }
 
@@ -231,7 +235,6 @@ div.button-set {
 	
 	text-decoration: none;
 	
-	color: var(--text-color);
 	background-color: #2f2f2f;
 	
 	-webkit-user-select: none;
@@ -239,6 +242,10 @@ div.button-set {
 	user-select: none;
 	
 	cursor: pointer;
+}
+
+.buttonlike:link, .buttonlike:visited {
+	color: var(--text-color);
 }
 
 .buttonlike::after {
