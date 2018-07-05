@@ -13,7 +13,7 @@ title: Blog
 							<h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
 							<aside>{{ post.date | date: "%B %d, %Y" }}{% if post.tags.size > 0 %} &ndash; {{ post.tags | join: ", " }}{% endif %}</aside>
 							<blockquote>{{ post.excerpt }}</blockquote>
-							<p><a href="{{ post.url }}">Read More...</a></p>
+							<p class="read-more"><a href="{{ post.url }}">Read More...</a></p>
 						</div>
 					{% endfor %}
 				</ul>

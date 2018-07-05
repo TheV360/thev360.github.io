@@ -175,8 +175,6 @@ hr {
 }
 
 aside {
-	margin-bottom: .5rem;
-	
 	color: #afafaf;
 	
 	font-size: small;
@@ -184,6 +182,7 @@ aside {
 }
 
 blockquote {
+	margin: .5rem 0;
 	padding: .5rem;
 	
 	background-color: #474747;
@@ -192,10 +191,14 @@ blockquote {
 	text-indent: 1em;
 }
 
+.read-more {
+	text-align: right;
+}
+
 .post p {
 	margin-bottom: .5rem;
 	
-	text-indent: 1em;
+	text-indent: 2em;
 }
 
 ul {
