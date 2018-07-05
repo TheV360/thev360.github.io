@@ -11,6 +11,7 @@
 				<h2>{{ page.title }}</h2>
 				<aside>{{ page.date | date: "%B %d, %Y" }}</aside>
 				{{ content }}
+				{% if post.tags.size > 0 %}<aside>Tag{% if post.tags.size > 1 %}s{% endif %}:  {{ post.tags | join: ", " }}</aside>{% endif %}
 			</div>
 		</section>
 		{% include footer.html %}

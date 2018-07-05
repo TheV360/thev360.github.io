@@ -262,7 +262,7 @@ div.button-set {
 	
 	cursor: pointer;
 	transition: all .25s ease-out;
-	transition-property: background-color;
+	transition-property: color background-color;
 }
 
 .buttonlike:link, .buttonlike:visited {
