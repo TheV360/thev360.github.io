@@ -113,7 +113,7 @@ footer {
 }
 
 /* Text layout */
-a {
+a:link,  a:visited {
 	display: inline-block;
 	position: relative;
 	
@@ -154,14 +154,12 @@ a:hover::after, .here a::after {
 }
 
 h1, h2, h3 {
-	color: white;
-	
-	margin-bottom: .5rem;
-	
-	font-family: "SF Display", "Lato", "Roboto";
+	font-family: "SF Display", "Lato", "Roboto", sans-serif;
 	font-weight: 300;
 	font-weight: 100;
 	font-size: 2rem;
+	
+	line-height: 1.4em;
 }
 
 h1 { font-size: 2rem; font-weight: 300; font-weight: 100; }
@@ -221,7 +219,7 @@ div.button-set {
 	
 	text-decoration: none;
 	
-	color: #cfcfcf;
+	color: var(--text-color);
 	background-color: #2f2f2f;
 	
 	-webkit-user-select: none;
@@ -308,7 +306,7 @@ ul.grid2::after {
 	}
 }
 @media (max-width: 64rem) {
-	.container {
+	section .container {
 		border-left: none;
 		border-right: none;
 	}
