@@ -9,12 +9,12 @@ title: Blog
 				<div>
 					{% for post in paginator.posts %}
 						<hr />
-						<div>
+						<div class="post-preview">
 							<h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
 							{% if post.subtitle %}<h4>{{ post.subtitle }}</h4>{% endif %}
 							<aside>{{ post.date | date: "%B %d, %Y" }}{% if post.tags.size > 0 %} &ndash; Tag{% if post.tags.size > 1 %}s{% endif %}: {{ post.tags | join: ", " }}{% endif %}</aside>
 							<blockquote>{{ post.excerpt }}</blockquote>
-							<!-- <p class="read-more"><a href="{{ post.url }}">Read More...</a></p> -->
+							<p class="read-more"><a href="{{ post.url }}">Read More...</a></p>
 						</div>
 					{% endfor %}
 				</div>

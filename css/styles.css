@@ -199,7 +199,19 @@ blockquote {
 	text-indent: var(--text-indent);
 }
 
-.read-more {
+.post-preview h2, .post-preview h3 {
+	float: left;
+}
+
+.post-preview aside {
+	float: right;
+}
+
+.post-preview blockquote {
+	clear: both;
+}
+
+.post-preview .read-more {
 	text-align: right;
 }
 
