@@ -9,7 +9,7 @@ tags: [GPD, Win, Win 2, UMPC, Windows]
 
 I've only had the GPD Win 2 for 3 weeks now, and I can already tell this is an amazing device. However, is it for you?<!--more-->
 
-![The Win 2 itself, taken from the IndieGoGo campaign.]({{ "/assets/win2indiegogo.png" | absolute_url }})
+![The Win 2 itself, taken from the IndieGoGo campaign.]({{ "/assets/win2IndieGoGo.jpg" | absolute_url }})
 
 ## Gamepad
 

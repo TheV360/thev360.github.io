@@ -226,6 +226,7 @@ blockquote {
 
 .post p img:only-child {
 	margin: 0 auto;
+	border-radius: .75rem;
 	
 	display: block;
 }
