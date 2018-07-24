@@ -14,6 +14,18 @@
 				{{ content }}
 				{% if page.tags.size > 0 %}<aside>Tag{% if page.tags.size > 1 %}s{% endif %}:  {{ page.tags | join: ", " }}</aside>{% endif %}
 			</div>
+			{% if page.comments %}
+			<hr />
+			<div id="disqus_thread"></div>
+			<script>
+				(function() {
+				var d = document, s = d.createElement('script');
+				s.src = 'https://v360github.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+				})();
+			</script>
+			{% endif %}
 		</section>
 		{% include footer.html %}
 	</body>

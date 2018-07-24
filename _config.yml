@@ -6,6 +6,7 @@ defaults:
   scope:
     path: "blog/"
   values:
+    comments: true
     layout: "post"
 
 excerpt_separator: <!--more-->
