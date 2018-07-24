@@ -84,7 +84,7 @@ Yeah, sorta.
 
 ## Should you buy this?
 
-### ~~No.~~ ~~Yes.~~ No.
+### ~~No.~~<span> </span>~~Yes.~~<span> </span>No.
 
 Yep, I'm sorta back-and-forth about purchasing the Win 2. I love the computer, but it's not for me.
 
