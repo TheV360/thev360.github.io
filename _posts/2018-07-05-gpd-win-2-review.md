@@ -5,6 +5,7 @@ subtitle: "A powerful computer in a small form factor"
 date: 2018-07-23
 update: 2018-07-24
 
+comments: true
 tags: [GPD, Win, Win 2, UMPC, Windows]
 ---
 

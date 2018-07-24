@@ -4,6 +4,7 @@ subtitle: "This is a test post"
 
 date: 2018-07-04
 
+comments: true
 tags: [Hello, World]
 ---
 

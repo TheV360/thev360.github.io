@@ -7,7 +7,6 @@ defaults:
     path: "blog/"
   values:
     layout: "post"
-    comments: true
 
 excerpt_separator: <!--more-->
 paginate: 8
