@@ -92,7 +92,7 @@ Yeah, sorta.
 
 Yep, I'm sorta back-and-forth about purchasing the Win 2. I love the computer, but it's not for me.
 
-If you just want to play a few light Steam games and emulate some SNES games (like me), you're better off just getting a GPD Win 1 or GPD XD (an Android device in a 3DS's shape). Also, if you're thinking you can get some productivity done on something like this, [I have](https://www.aliexpress.com/store/product/New-Original-GPD-Pocket-7-Inch-Aluminum-Shell-Mini-Laptop-UMPC-Windows-10-System-CPU-x7/1281164_32814746257.html) [news for you.](https://www.indiegogo.com/project/preview/c2c771f7/)
+If you just want to play a few light Steam games and emulate some SNES games (like me), you're better off just getting a GPD Win 1 or GPD XD (an Android device in a 3DS's shape). Also, if you're thinking you can get some productivity done on something like this, [I have](https://www.aliexpress.com/store/product/New-Original-GPD-Pocket-7-Inch-Aluminum-Shell-Mini-Laptop-UMPC-Windows-10-System-CPU-x7/1281164_32814746257.html)&nbsp;[news for you.](https://www.indiegogo.com/project/preview/c2c771f7/)
 
 Yeah, I'm probably selling my Win 2 after this review. However, I'm going to go right back and buy a Win 1, because while I don't need the ridiculous power the Win 2 has, I need its form factor.
 
