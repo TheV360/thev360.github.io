@@ -1,6 +1,6 @@
 name: V360
 url: https://thev360.github.io
-description: V360's projects and blog! what else should i put in this field ?
+description: V360's projects and blog!
 
 defaults:
   scope:

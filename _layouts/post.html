@@ -10,22 +10,22 @@
 			<div class="container post">
 				<h2>{{ page.title }}</h2>
 				{% if page.subtitle %}<h4>{{ page.subtitle }}</h4>{% endif %}
-				<aside>{{ page.date | date: "%B %d, %Y" }}</aside>
+				<aside>{{ page.date | date: "%B %d, %Y" }}{% if page.update %}, updated {{ page.update | date: "%B %d, %Y" }}{% endif %}</aside>
 				{{ content }}
 				{% if page.tags.size > 0 %}<aside>Tag{% if page.tags.size > 1 %}s{% endif %}:  {{ page.tags | join: ", " }}</aside>{% endif %}
+				{% if page.comments %}
+				<hr />
+				<div id="disqus_thread"></div>
+				<script>
+					(function() {
+					var d = document, s = d.createElement('script');
+					s.src = 'https://v360github.disqus.com/embed.js';
+					s.setAttribute('data-timestamp', +new Date());
+					(d.head || d.body).appendChild(s);
+					})();
+				</script>
+				{% endif %}
 			</div>
-			{% if page.comments %}
-			<hr />
-			<div id="disqus_thread"></div>
-			<script>
-				(function() {
-				var d = document, s = d.createElement('script');
-				s.src = 'https://v360github.disqus.com/embed.js';
-				s.setAttribute('data-timestamp', +new Date());
-				(d.head || d.body).appendChild(s);
-				})();
-			</script>
-			{% endif %}
 		</section>
 		{% include footer.html %}
 	</body>

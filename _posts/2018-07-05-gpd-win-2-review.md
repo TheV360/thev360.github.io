@@ -3,7 +3,9 @@ title: "GPD Win 2 Review"
 subtitle: "A powerful computer in a small form factor"
 
 date: 2018-07-23
+update: 2018-07-24
 
+comments: true
 tags: [GPD, Win, Win 2, UMPC, Windows]
 ---
 
@@ -21,15 +23,13 @@ There's also built-in rumble, which is something I could live without. Either wa
 
 You may be asking, "Hey, where's the Start and Select buttons?" Well, they're on the keyboard. Weird decision, but it works.
 
-The interesting thing is that the gamepad is also the mouse. You switch between the gamepad and mouse mode with a switch, and it works well.
+The interesting thing is that the gamepad is also the mouse. You switch between the gamepad and mouse mode with a switch, and it works well. You click with the first two shoulder buttons, middle click with L2, and scroll with the d-pad. If moving the mouse seems too slow, you can hold down R2 to speed it up. It's a shame that GPD made the left stick the WASD keys, and I wish there was an option to change it to the mouse wheel.
 
 ![A closeup of the GPD Win 2, highlighting the keyboard. Also, there's the gamepad.]({{ "/assets/win2Closeup.jpg" | absolute_url }})
 
 ## Screen
 
-The screen is nice and big (1280x720, to be precise), and has a good amount of brightness. It has Gorilla Glass, so that adds some gloss to the screen, but it's fine by me.
-
-It's also a touchscreen, so that helps when you're in gamepad mode and trying to launch Dolphin.
+The screen is nice and big (1280x720, to be precise), and has a good amount of brightness. It has Gorilla Glass, so that adds some gloss to the screen, but it's fine by me. It's also a touchscreen, so that helps when you're in gamepad mode and trying to launch Dolphin.
 
 ## Ports and Other Inputs
 
@@ -38,6 +38,10 @@ The Win 2 is equipped with a full-size USB port, a USB-C port for charging and d
 You of course also have the keyboard, which is good. It takes some getting used to, but I had an alright time searching things and typing in passwords.
 
 There's also a microphone on the Win 2, which is... good enough. It's actually a bit better than my microphone on my expensive *gamer* laptop.
+
+## Software
+
+The Win 2 runs a full version of Windows 10. Of course, Windows 10 isn't designed for this small form factor, but if you bump up the UI scale, it should be pretty usable. You can also enable tablet mode, but that just hides a lot of useful features.
 
 ## Speed
 
@@ -94,9 +98,7 @@ Yep, I'm sorta back-and-forth about purchasing the Win 2. I love the computer, b
 
 If you just want to play a few light Steam games and emulate some SNES games (like me), you're better off just getting a GPD Win 1 or GPD XD (an Android device in a 3DS's shape). Also, if you're thinking you can get some productivity done on something like this, [I have](https://www.aliexpress.com/store/product/New-Original-GPD-Pocket-7-Inch-Aluminum-Shell-Mini-Laptop-UMPC-Windows-10-System-CPU-x7/1281164_32814746257.html)&nbsp;[news for you.](https://www.indiegogo.com/project/preview/c2c771f7/)
 
-Yeah, I'm probably selling my Win 2 after this review. However, I'm going to go right back and buy a Win 1, because while I don't need the ridiculous power the Win 2 has, I need its form factor.
-
-However, there's nothing stopping you from buying it, so if it sounds like your thing and you want to play Fallout 4 on the go, do it.
+Yeah, I'm probably selling my Win 2 after this review. However, I'm going to go right back and buy a Win 1, because while I don't need the ridiculous power the Win 2 has, I need its form factor. There's nothing stopping you from buying it, so if it sounds like your thing and you want to play Fallout 4 on the go, do it.
 
 It's not quite my thing, but it could be yours.
 
