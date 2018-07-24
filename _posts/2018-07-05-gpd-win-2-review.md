@@ -9,6 +9,8 @@ tags: [GPD, Win, Win 2, UMPC, Windows]
 
 I've only had the GPD Win 2 for 3 weeks now, and I can already tell this is an amazing device. However, is it for you?<!--more-->
 
+![The Win 2 itself, taken from the IndieGoGo campaign.](../Assets/win2indiegogo.jpg)
+
 ## Gamepad
 
 The buttons, while being a bit of a distance your thumbs have to travel, feel nice to press and the d-pad is tolerable. You'll want to use the sticks, which are **absolutely *PERFECT***... except for one minor nitpick. They're amazing, don't get me wrong, but it sorta feels like the dead zones (am I using that word right) on the analogue sticks are a bit big on both.
