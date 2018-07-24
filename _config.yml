@@ -4,7 +4,7 @@ description: V360's projects and blog!
 
 defaults:
   scope:
-    path: "blog"
+    path: "blog/"
   values:
     layout: "post"
     comments: true
