@@ -4,10 +4,10 @@ description: V360's projects and blog!
 
 defaults:
   scope:
-    path: "blog/"
+    path: "blog"
   values:
-    comments: true
     layout: "post"
+    comments: true
 
 excerpt_separator: <!--more-->
 paginate: 8
