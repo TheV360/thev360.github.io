@@ -9,7 +9,7 @@ tags: [GPD, Win, Win 2, UMPC, Windows]
 
 I've only had the GPD Win 2 for 3 weeks now, and I can already tell this is an amazing device. However, is it for you?<!--more-->
 
-![The Win 2 itself, taken from the IndieGoGo campaign.](../Assets/win2indiegogo.jpg)
+![The Win 2 itself, taken from the IndieGoGo campaign.]({{ "/assets/win2indiegogo.jpg" | absolute_url }})
 
 ## Gamepad
 
@@ -23,7 +23,7 @@ You may be asking, "Hey, where's the Start and Select buttons?" Well, they're on
 
 The interesting thing is that the gamepad is also the mouse. You switch between the gamepad and mouse mode with a switch, and it works well.
 
-![A closeup of the GPD Win 2, highlighting the keyboard. Also, there's the gamepad.](../Assets/win2Closeup.jpg)
+![A closeup of the GPD Win 2, highlighting the keyboard. Also, there's the gamepad.]({{/assets/win2Closeup.jpg | absolute_url }})
 
 ## Screen
 
@@ -43,7 +43,7 @@ There's also a microphone on the Win 2, which is... good enough. It's actually a
 
 The Win 2 is fast and snappy. Equipped with an Intel Core m3-7y30, 128 GB SSD (or more if you have the money) and 4 GB of RAM, it runs apps like Firefox or VS Code like nothing.
 
-![The GPD Win 2 (right) is a bit bigger than the 3DS.](../Assets/win2vs3ds.jpg)
+![The GPD Win 2 (right) is a bit bigger than the 3DS.]({{/assets/win2vs3ds.jpg | absolute_url }})
 
 Then there's the games. Since it's a Windows 10 computer, you have access to your entire Steam​/​Origin​/​GOG​/​Whatever library. Seriously, look at [The Phawx's videos on the Win 2.](https://www.youtube.com/playlist?list=PLdC3pP79J-A9DOxk9GbrHB_Ekz_Lb7YDE) It can run recent games without much effort, just not "2016 to now" recent games.
 
@@ -74,7 +74,7 @@ The display's ribbon cable can get a bit messed up and cause some nasty lines ac
 
 To sum it up, it feels like a 3DS XL merged with an Xbox controller with the Chatpad attached.
 
-![Artist's rendition](../Assets/notTheWin2.png)
+![Artist's rendition]({{/assets/notTheWin2.png | absolute_url }})
 
 <sup><sup>[Xbox 360 controller with Chatpad](https://commons.wikimedia.org/wiki/File:Xbox_360_Chatpad%2Bcontroller.png) by [Alphathon](https://commons.wikimedia.org/wiki/User:Alphathon).</sup></sup>
 
