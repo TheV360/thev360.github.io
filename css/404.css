@@ -1,13 +1,3 @@
-* {
-	margin: 0;
-	border: 0;
-	padding: 0;
-	
-	box-sizing: border-box;
-	
-	font-family: sans-serif;
-}
-
 div#bwbox {
 	position: relative;
 	
@@ -17,6 +7,8 @@ div#bwbox {
 	
 	width: 13rem;
 	height: 8rem;
+	
+	z-index: 1;
 }
 
 div#bwbox::after {
@@ -41,10 +33,13 @@ div#bwbox::after {
 div#bwbox h1, div#bwbox h2, div#bwbox h3 {
 	display: block;
 	position: absolute;
+	
+	font-family: sans-serif;
+	font-weight: bold;
 }
 
 div#bwbox h1 {
-	top: 1.7rem;
+	top: 1.2rem;
 	left: 2rem;
 	
 	float:left;
@@ -81,7 +76,7 @@ div#bwbox h1::after {
 }
 
 div#bwbox h2 {
-	top: 3.9rem;
+	top: 3.4rem;
 	left: 6.6rem;
 	
 	color: white;
@@ -94,7 +89,7 @@ div#bwbox h2 {
 }
 
 div#bwbox h3 {
-	top: 3.85rem;
+	top: 3.35rem;
 	left: 6.6rem;
 	
 	transform-origin: center;
