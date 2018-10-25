@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		{% include headTags.html %}
+		<title>V360 &ndash; {{ page.title }}</title>
+		<link rel="stylesheet" href="/css/404.css" />
+	</head>
+	<body>
+		{% include header.html %}
+		<section>
+			{{ content }}
+		</section>
+		{% include footer.html %}
+	</body>
+</html>
