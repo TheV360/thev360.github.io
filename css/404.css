@@ -1,3 +1,9 @@
+/* Variables */
+:root {
+	--anim-timing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+/* Main styles */
 div#bwbox {
 	position: relative;
 	
@@ -11,25 +17,7 @@ div#bwbox {
 	z-index: 1;
 }
 
-div#bwbox::after {
-	content: "";
-	
-	display: block;
-	position: absolute;
-	
-	top: -5%;
-	left: -12.5%;
-	
-	width: 125%;
-	height: 110%;
-	
-	background-color: black;
-	
-	filter: blur(4px);
-	
-	z-index: -2;
-}
-
+/* Children styles */
 div#bwbox h1, div#bwbox h2, div#bwbox h3 {
 	display: block;
 	position: absolute;
@@ -54,27 +42,6 @@ div#bwbox h1 {
 	font-size: 4rem;
 }
 
-div#bwbox h1::after {
-	content: "";
-	
-	display: block;
-	position: absolute;
-	
-	top: -5%; left: -5%;
-	
-	width: 110%; height: 110%;
-	
-	background-color: #1f3f7f;
-	
-	transform-origin: center;
-	transform: rotate(-12.5deg);
-	filter: blur(4px);
-	
-	z-index: -1;
-	
-	animation: sine-horiz 2s ease-in-out infinite alternate, rotate 4s ease-in-out infinite alternate;
-}
-
 div#bwbox h2 {
 	top: 3.4rem;
 	left: 6.6rem;
@@ -85,7 +52,7 @@ div#bwbox h2 {
 	
 	font-size: 2.5rem;
 	
-	animation: sine-horiz 2s ease-in-out infinite alternate, sine-vert 1.9s ease-in-out infinite alternate;
+	animation: sine-horiz 2s var(--anim-timing) infinite alternate, sine-vert 1.9s var(--anim-timing) infinite alternate;
 }
 
 div#bwbox h3 {
@@ -105,9 +72,61 @@ div#bwbox h3 {
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	
-	animation: sine-horiz 1.8s ease-in-out infinite alternate, sine-vert 1.7s ease-in-out infinite alternate;
+	animation: sine-horiz 1.8s var(--anim-timing) infinite alternate, sine-vert 1.7s var(--anim-timing) infinite alternate;
 }
 
+div#bwbox p {
+	margin-left: 3rem;
+	
+	color: white;
+	
+	mix-blend-mode: screen;
+	
+	font-family: serif;
+}
+
+/* ::afters */
+div#bwbox::after {
+	content: "";
+	
+	display: block;
+	position: absolute;
+	
+	top: -5%;
+	left: -12.5%;
+	
+	width: 125%;
+	height: 110%;
+	
+	background-color: black;
+	
+	filter: blur(4px);
+	
+	z-index: -2;
+}
+
+div#bwbox h1::after {
+	content: "";
+	
+	display: block;
+	position: absolute;
+	
+	top: -5%; left: -5%;
+	
+	width: 110%; height: 110%;
+	
+	background-color: #1f3f7f;
+	
+	transform-origin: center;
+	transform: rotate(-12.5deg);
+	filter: blur(4px);
+	
+	z-index: -1;
+	
+	animation: sine-horiz 2s var(--anim-timing) infinite alternate, rotate 4s var(--anim-timing) infinite alternate;
+}
+
+/* Animations */
 @keyframes sine-horiz {
 	from { margin-left: -.25rem; }
 	to { margin-left: .25rem; }
@@ -121,14 +140,4 @@ div#bwbox h3 {
 @keyframes rotate {
 	from { transform: rotate(-15deg); }
 	to { transform: rotate(15deg); }
-}
-
-div#bwbox p {
-	margin-left: 3rem;
-	
-	color: white;
-	
-	mix-blend-mode: screen;
-	
-	font-family: serif;
 }
