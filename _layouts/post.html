@@ -4,7 +4,7 @@
 		{% include headTags.html %}
 		<title>V360 &ndash; {{ page.title }}</title>
 		{% if page.subtitle %}<meta name="description" content="{{ page.subtitle }}" />{% endif %}
-		{% if page.tags.size > 0 %}<meta name="keywords" content="{{ page.tags | join: "," }}">{% endif %}
+		{% if page.tags.size > 0 %}<meta name="keywords" content="{{ page.tags | join: "," }}" />{% endif %}
 	</head>
 	<body>
 		{% include header.html %}
