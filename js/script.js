@@ -37,7 +37,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 		
 		// Underline the page you're on
 		for (i = 0; i < navitems.length; i++) {
-			if (navitems[i].childNodes[0].href == document.location.href.substring(0, navitems[i].childNodes[0].href.length)) {
+			if (navitems[i].childNodes[0].href == document.location.href) {
 				navitems[i].classList.add("here");
 			}
 		}
