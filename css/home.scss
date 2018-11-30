@@ -4,7 +4,7 @@
 div#superhero {
 	display: flex;
 	
-	min-height: 80vh;
+	min-height: calc(100vh - var(--header-height));
 	
 	background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("/assets/Banner.jpg");
 	background-color: black;
