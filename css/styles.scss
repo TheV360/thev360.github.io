@@ -28,6 +28,8 @@ html, body {
 	--thin-border-size: .125rem;
 	--thin-border-color: #1f1f1f;
 	
+	--overlay-color: rgba(0, 0, 0, .5);
+	
 	--text-indent: 0em;
 }
 
@@ -313,7 +315,7 @@ div.button-set {
 	
 	cursor: pointer;
 	transition: all .25s ease-out;
-	transition-property: color background-color;
+	transition-property: color, background-color;
 	
 	&:hover {
 		color: white;

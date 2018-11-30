@@ -18,7 +18,7 @@
 		
 		max-width: 32rem;
 		
-		background-color: #3f3f3fcf;
+		background-color: var(--overlay-color);
 	}
 	
 	&:nth-child(odd) {
