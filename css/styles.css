@@ -231,7 +231,7 @@ blockquote {
 	display: block;
 }
 
-ul {
+ol, ul, li {
 	list-style-position: inside;
 }
 
