@@ -21,15 +21,6 @@ div#superhero {
 		max-width: 24rem;
 		
 		text-align: center;
-		
-		&:not(img) {
-			text-shadow:
-				1px  0 4px black,
-				0  1px 4px black,
-				-1px 0 4px black,
-				0 -1px 4px black
-			;
-		}
 	}
 	
 	h1 {
