@@ -1,3 +1,6 @@
+---
+---
+
 /* Profile Picture */
 div#profile-container {
 	float: left;
@@ -7,20 +10,20 @@ div#profile-container {
 	
 	width: 4rem;
 	height: 4rem;
-}
-
-div#profile-container img#profile {
-	border: solid var(--thin-border-size) #0000007f;
-	border-radius: .5rem;
 	
-	width: 4rem;
-	height: 4rem;
+	img#profile {
+		border: solid var(--thin-border-size) #0000007f;
+		border-radius: .5rem;
+		
+		width: 4rem;
+		height: 4rem;
+		
+		box-shadow: 0 .375rem .25rem -.25rem #1f1f1f;
+	}
 	
-	box-shadow: 0 .375rem .25rem -.25rem #1f1f1f;
-}
-
-div#profile-container:hover img#profile {
-	animation: helloFriend 2s ease-in-out;
+	&:hover img#profile {
+		animation: helloFriend 2s ease-in-out;
+	}
 }
 
 /* Animations */

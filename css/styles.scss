@@ -1,5 +1,8 @@
-/* CSS By V360 */
-/* donut steel */
+---
+---
+
+/* SCSS By V360 */
+/* donut  steel */
 
 /* Reset Styles */
 * {
@@ -52,49 +55,51 @@ header {
 	overflow: hidden;
 	
 	z-index: 1;
-}
-
-header > div.container {
-	display: block;
 	
-	padding: 0 .5rem;
+	> div.container {
+		display: block;
+		
+		padding: 0 .5rem;
+		
+		height: 3rem;
+		
+		> * {
+			display: inline-block;
+			
+			height: 3rem;
+			
+			vertical-align: top;
+			
+			line-height: 3rem;
+		}
+	}
 	
-	height: 3rem;
-}
-
-header > div.container > * {
-	display: inline-block;
+	// That "V360" logo thing that really should be a link
+	h6 {
+		float: left;
+		
+		margin: 0 .5rem;
+	}
 	
-	height: 3rem;
+	// Nav Stuff
+	nav#header-nav {
+		float: right;
+	}
 	
-	vertical-align: top;
-	
-	line-height: 3rem;
-}
-
-header h6 {
-	float: left;
-	
-	margin: 0 .5rem;
-}
-
-header nav#header-nav,
-header #toggle-nav {
-	float: right;
-}
-
-header #toggle-nav {
-	display: none;
-	
-	margin: .5rem 0 .5rem .5rem;
-	
-	width: 2rem;
-	height: 2rem;
-	
-	background-image: url("../assets/menu.png");
-	background-position: center;
-	background-size: 1.5rem;
-	background-repeat: no-repeat;
+	#toggle-nav {
+		display: none;
+		float: right;
+		
+		margin: .5rem 0 .5rem .5rem;
+		
+		width: 2rem;
+		height: 2rem;
+		
+		background-image: url("../assets/menu.png");
+		background-position: center;
+		background-size: 1.5rem;
+		background-repeat: no-repeat;
+	}
 }
 
 /* Section Layout */
@@ -107,54 +112,57 @@ section > :last-child {
 footer {
 	margin: .5rem;
 	
-	text-align: center;
-	
 	font-size: .75rem;
+	text-align: center;
 	
 	color: #7f7f7f;
 }
 
 /* Text layout */
-a:link,  a:visited {
-	display: inline-block;
-	position: relative;
+a {
+	&:link,  &:visited {
+		display: inline-block;
+		position: relative;
+		
+		color: var(--link-color);
+		
+		text-decoration: none;
+		text-indent: 0;
+	}
 	
-	color: var(--link-color);
+	&::after {
+		content: "";
+		
+		position: absolute;
+		bottom: 0;
+		display: block;
+		margin: 0 50%;
+		
+		width: 0;
+		height: .125rem;
+		
+		background-color: var(--link-color);
+		
+		transition: all .25s ease-out;
+		transition-property: width, margin;
+		
+		.here & {
+			transition: none;
+		}
+	}
 	
-	text-decoration: none;
-	text-indent: 0;
+	&:hover, .here & {
+		&::after {
+			margin: 0;
+			
+			width: 100%;
+		}
+	}
 }
 
 /* a:hover {
 	text-decoration: underline;
 } */
-
-a::after {
-	content: "";
-	
-	position: absolute;
-	bottom: 0;
-	display: block;
-	margin: 0 50%;
-	
-	width: 0;
-	height: .125rem;
-	
-	background-color: var(--link-color);
-	
-	transition: all .25s ease-out;
-	transition-property: width, margin;
-}
-
-.here a::after {
-	transition: none;
-}
-
-a:hover::after, .here a::after {
-	margin: 0;
-	
-	width: 100%;
-}
 
 img {
 	max-width: 100%;
@@ -201,34 +209,37 @@ blockquote {
 	text-indent: var(--text-indent);
 }
 
-.post-preview h3, .post-preview h4 {
-	float: left;
-	clear: left;
+.post-preview {
+	h3, h4 {
+		float: left;
+		clear: left;
+	}
+	
+	aside {
+		float: right;
+	}
+	
+	blockquote {
+		clear: both;
+	}
+	
+	.read-more {
+		text-align: right;
+	}
 }
 
-.post-preview aside {
-	float: right;
-}
-
-.post-preview blockquote {
-	clear: both;
-}
-
-.post-preview .read-more {
-	text-align: right;
-}
 
 .post p {
 	margin-bottom: .5rem;
 	
 	text-indent: var(--text-indent);
-}
-
-.post p img:only-child {
-	margin: 0 auto;
-	border-radius: .75rem;
 	
-	display: block;
+	img:only-child {
+		margin: 0 auto;
+		border-radius: .75rem;
+		
+		display: block;
+	}
 }
 
 ol, ul, li {
@@ -244,16 +255,16 @@ ol, ul, li {
 }
 
 /* General nav layouts */
-nav ul,
-nav li {
-	display: inline-block;
-}
-
-nav li:not(:last-child)::after {
-	/* Bonus space because CSS afters are dumb */
-	content: " \2022  ";
-	
-	white-space: pre;
+nav {
+	ul, li {
+		display: inline-block;
+	}
+	li:not(:last-child)::after {
+		/* Bonus space because CSS afters are dumb */
+		content: " \2022  ";
+		
+		white-space: pre;
+	}
 }
 
 /* Containers */
@@ -265,14 +276,14 @@ nav li:not(:last-child)::after {
 	width: 100%;
 	
 	max-width: 64rem;
-}
-
-section .container {
-	padding: 1rem 2rem;
-	border-left: solid var(--thin-border-size) var(--thin-border-color);
-	border-right: solid var(--thin-border-size) var(--thin-border-color);
 	
-	background-color: #3f3f3f;
+	section & {
+		padding: 1rem 2rem;
+		border-left: solid var(--thin-border-size) var(--thin-border-color);
+		border-right: solid var(--thin-border-size) var(--thin-border-color);
+		
+		background-color: #3f3f3f;
+	}
 }
 
 /* Buttonlikes */
@@ -301,33 +312,37 @@ div.button-set {
 	cursor: pointer;
 	transition: all .25s ease-out;
 	transition-property: color background-color;
-}
-
-.buttonlike:link, .buttonlike:visited {
-	color: white;
-}
-
-.buttonlike::after {
-	content: none;
-}
-
-.buttonlike.button-primary {
-	background-color: #1f3f7f;
-}
-
-.buttonlike:hover {
-	color: white;
-	background-color: #6f6f6f;
 	
-	text-decoration: none;
-}
-
-.buttonlike.button-primary:hover {
-	background-color: #3f7fff;
-}
-
-.buttonlike + .buttonlike {
-	margin-left: .25rem;
+	&:hover {
+		color: white;
+		background-color: #6f6f6f;
+		
+		text-decoration: none;
+	}
+	
+	&:link {
+		color: white;
+	}
+	
+	&:visited {
+		color: #dfdfdf;
+	}
+	
+	&.button-primary {
+		background-color: #1f3f7f;
+		
+		&:hover {
+			background-color: #3f7fff;
+		}
+	}
+	
+	&::after {
+		content: none;
+	}
+	
+	& + & {
+		margin-left: .25rem;
+	}
 }
 
 /* ClearFix */
@@ -360,12 +375,14 @@ header::after,
 }
 ::-webkit-scrollbar-button {
 	height: 1rem;
-}
-::-webkit-scrollbar-button:vertical:decrement {
-	border-radius: 0 0 .25rem .25rem;
-}
-::-webkit-scrollbar-button:vertical:increment {
-	border-radius: .25rem .25rem 0 0;
+	
+	&:vertical:decrement {
+		border-radius: 0 0 .25rem .25rem;
+	}
+	
+	&:vertical:increment {
+		border-radius: .25rem .25rem 0 0;
+	}
 }
 
 /* @medias */
