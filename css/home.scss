@@ -1,6 +1,33 @@
 ---
 ---
 
+div#superhero {
+	display: flex;
+	
+	min-height: 75vh;
+	
+	background-color: black;
+	background-position: center;
+	background-size: cover;
+	
+	border-bottom: solid var(--thin-border-size) var(--thin-border-color);
+	
+	flex-direction: column;
+	
+	justify-content: center;
+	align-items: center;
+	
+	& > * {
+		max-width: 32;
+		
+		text-align: center;
+		
+		&:not(img) {
+			text-shadow: 0 1px 4px black;
+		}
+	}
+}
+
 /* Profile Picture */
 div#profile-container {
 	float: left;
