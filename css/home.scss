@@ -1,22 +1,55 @@
 ---
 ---
 
+div.superhero {
+	height: 100vh;
+	
+	border-bottom: solid var(--thin-border-size) var(--thin-border-color);
+	
+	perspective: 1rem;
+	
+	div.superhero-content {
+		display: flex;
+		
+		flex-direction: column;
+		
+		justify-content: center;
+		justify-items: center;
+		align-content: center;
+		align-items: center;
+		
+		& > * {
+			
+		}
+		
+		h1, p {
+			max-width: 32rem;
+		}
+	}
+	
+	div.superhero-background {
+		background-color: black;
+		background-size: cover;
+		
+		position: absolute;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+		
+		transform: translateZ(-1rem) scale(2);
+	}
+}
+
 /* Profile Picture */
 div#profile-container {
-	float: left;
-	
-	margin-right: 1rem;
-	margin-bottom: .25rem;
-	
-	width: 4rem;
-	height: 4rem;
+	width: 6rem;
+	height: 6rem;
 	
 	img#profile {
-		border: solid var(--thin-border-size) rgba(0, 0, 0, .5); /*#0000007f*/
+		border: solid var(--thin-border-size) rgba(0, 0, 0, .5);
 		border-radius: .5rem;
 		
-		width: 4rem;
-		height: 4rem;
+		width: 6rem;
+		height: 6rem;
 		
 		box-shadow: 0 .375rem .25rem -.25rem #1f1f1f;
 	}
