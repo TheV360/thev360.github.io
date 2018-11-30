@@ -25,14 +25,16 @@ div#superhero {
 	}
 	
 	h2 {
-		margin: 1rem;
-		
 		font-size: 2.5rem;
 	}
 	
 	p {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		line-height: 1.5em;
+	}
+	
+	h2, p {
+		margin: .5rem;
 	}
 }
 
