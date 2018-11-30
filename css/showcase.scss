@@ -50,6 +50,6 @@
 	}
 }
 
-:not(.showcase) + .showcase {
+:not(.showcase):not(#superhero) + .showcase {
 	border-top: solid var(--thin-border-size) var(--thin-border-color);
 }
