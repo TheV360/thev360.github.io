@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 		// I'm sorry
 		var headerHeightInPixels = parseInt(getRootStyle("--header-height")) * parseInt(getRootStyle("font-size"));
 		
-		document.documentElement.scrollTo({
+		window.scrollTo({
 			top: firstProject.offsetTop - headerHeightInPixels,
-			left: document.documentElement.scrollX,
+			left: window.scrollX,
 			behavior: "smooth"
 		});
 	});
