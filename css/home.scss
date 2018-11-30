@@ -12,7 +12,7 @@ div#profile-container {
 	height: 4rem;
 	
 	img#profile {
-		border: solid var(--thin-border-size) #0000007f;
+		border: solid var(--thin-border-size) rgba(0, 0, 0, .5); /*#0000007f*/
 		border-radius: .5rem;
 		
 		width: 4rem;
