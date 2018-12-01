@@ -6,18 +6,39 @@ function getRootStyle(str) {
 }
 
 document.addEventListener("DOMContentLoaded", (e)=>{
+	var enough = false;
+	
+	var header = document.querySelector("header");
 	var projectsButton = document.getElementById("projectsButton");
 	var firstProject = document.querySelector(".showcase");
 	
-	projectsButton.addEventListener("click", (e)=>{
-		// I'm sorry
-		var headerHeightInPixels = parseInt(getRootStyle("--header-height")) * parseInt(getRootStyle("font-size"));
+	// I'm sorry
+	var headerHeightInPixels = parseInt(getRootStyle("--header-height")) * parseInt(getRootStyle("font-size"));
+	
+	function setHeader() {
+		if (window.scrollY > firstProject.offsetTop - headerHeightInPixels) {
+			header.classList.remove("noBG")
+		} else {
+			header.classList.add("noBG")
+		}
 		
+		enough = false;
+	}
+	
+	projectsButton.addEventListener("click", (e)=>{
 		window.scrollTo({
 			top: firstProject.offsetTop - headerHeightInPixels,
 			left: window.scrollX,
 			behavior: "smooth"
 		});
+		header.classList.remove("noBG");
+	});
+	
+	window.addEventListener("scroll", (e)=>{
+		if (!enough) {
+			window.requestAnimationFrame(setHeader);
+			enough = true;
+		}
 	});
 });
 

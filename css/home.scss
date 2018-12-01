@@ -1,12 +1,22 @@
 ---
 ---
 
+header {
+	&.noBG {
+		background-color: transparent;
+	}
+}
+
+section {
+	margin-top: 0;
+}
+
 div#superhero {
 	display: flex;
 	
 	min-height: 32rem;
 	
-	height: calc(100vh - var(--header-height));
+	height: 100vh;
 	
 	background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("/assets/Banner.jpg");
 	background-color: black;
