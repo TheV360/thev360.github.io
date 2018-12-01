@@ -5,10 +5,12 @@ header {
 	&.noBG {
 		background-color: transparent;
 	}
+	
+	transition: .5s background-color ease-in-out;
 }
 
 section {
-	margin-top: 0;
+	padding-top: 0;
 }
 
 div#superhero {
