@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 		"Having existential crises since 2013!",
 		"Capitalism is trash. Water is wet.",
 		"Some ferns are green, I'm in a mech,", // TODO: fix this rhyme.
-		"Now contains 100% less JQuery!" // Just wanted to do a jab at JQuery, it's an alright library, but it's pretty bloated.
+		"Now contains 100% less JQuery!" // Just wanted to do a jab at JQuery, it's an alright library, but it's pretty bloated...
 	];
 	
 	// Remove whitespace tags
