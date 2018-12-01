@@ -1,12 +1,18 @@
 ---
 ---
 
-header {
-	&.noBG {
-		background-color: transparent;
+@media (min-width: 64rem) {
+	header {
+		&.noBG {
+			background-color: transparent;
+		}
+		
+		a::after {
+			top: 0; bottom: auto;
+		}
+		
+		transition: .125s background-color ease-in-out;
 	}
-	
-	transition: .5s background-color ease-in-out;
 }
 
 section {

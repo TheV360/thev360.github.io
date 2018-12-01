@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 	var headerHeightInPixels = parseInt(getRootStyle("--header-height")) * parseInt(getRootStyle("font-size"));
 	
 	function setHeader() {
-		if (window.scrollY > firstProject.offsetTop - headerHeightInPixels) {
+		if (window.scrollY >= firstProject.offsetTop - headerHeightInPixels) {
 			header.classList.remove("noBG")
 		} else {
 			header.classList.add("noBG")
@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 		
 		enough = false;
 	}
+	
+	setHeader();
 	
 	projectsButton.addEventListener("click", (e)=>{
 		window.scrollTo({
