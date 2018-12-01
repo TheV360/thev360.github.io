@@ -39,7 +39,15 @@ window.addEventListener("DOMContentLoaded", ()=>{
 		// Underline the page you're on
 		for (i = 0; i < navitems.length; i++) {
 			if (navitems[i].childNodes[0].href == document.location.href) {
-				navitems[i].childNodes[0].href = "#"; // Go to top on click
+				navitems[i].childNodes[0].href = "javascript:void(0)";
+				navitems[i].childNodes[0].addEventListener("click", ()=>{
+					// Go to top on click
+					window.scrollTo({
+						top: 0,
+						left: window.scrollX,
+						behavior: "smooth"
+					});
+				});
 				navitems[i].classList.add("here");
 			}
 		}
