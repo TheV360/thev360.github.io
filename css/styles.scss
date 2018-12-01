@@ -112,7 +112,9 @@ header {
 
 /* Section Layout */
 section {
-	padding-top: var(--header-height);
+	header + & {
+		padding-top: var(--header-height);
+	}
 	
 	& > :last-child {
 		border-bottom: solid var(--thin-border-size) var(--thin-border-color);

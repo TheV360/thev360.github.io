@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 	var headerHeightInPixels = parseInt(getRootStyle("--header-height")) * parseInt(getRootStyle("font-size"));
 	
 	function setHeader() {
-		if (window.scrollY >= firstProject.offsetTop - headerHeightInPixels) {
-			header.classList.remove("noBG")
+		if (!!window.scrollY) {
+			header.classList.remove("heroic")
 		} else {
-			header.classList.add("noBG")
+			header.classList.add("heroic")
 		}
 		
 		enough = false;
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 			left: window.scrollX,
 			behavior: "smooth"
 		});
-		header.classList.remove("noBG");
+		header.classList.remove("heroic");
 	});
 	
 	window.addEventListener("scroll", (e)=>{

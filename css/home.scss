@@ -3,19 +3,19 @@
 
 @media (min-width: 64rem) {
 	header {
-		&.noBG {
+		&.heroic {
 			background-color: transparent;
-		}
 		
-		a::after {
-			top: 0; bottom: auto;
+			a::after {
+				top: 0; bottom: auto;
+			}
 		}
 		
 		transition: .125s background-color ease-in-out;
 	}
 }
 
-section {
+header + section {
 	padding-top: 0;
 }
 

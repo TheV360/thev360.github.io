@@ -1,26 +1,26 @@
 "use strict";
 
-var i;
-var togglenav, nav, navitems;
-var footernote;
-
-const footernotes = [
-	"Sincerely, a Minecraft fan.",
-	"Thank.",
-	"What's happening, fellow gamers?",
-	"This is a randomly chosen footer note.",
-	"This isn't a placeholder!",
-	"Probably not actually copyrighted.",
-	"Meta joke here.",
-	"REALLY GREAT RPG 2 coming soon! I swear!",
-	"Having existential crises since 2013!",
-	"Capitalism is trash. Water is wet.",
-	"Some ferns are green, I'm in a mech,", // TODO: fix this rhyme.
-	"Now contains 100% less JQuery!" // Just wanted to do a jab at JQuery, it's an alright library, but it's pretty bloated.
-];
-
 // Once page loads completely...
 window.addEventListener("DOMContentLoaded", ()=>{
+	var i;
+	var togglenav, nav, navitems;
+	var footernote;
+	
+	const footernotes = [
+		"Sincerely, a Minecraft fan.",
+		"Thank.",
+		"What's happening, fellow gamers?",
+		"This is a randomly chosen footer note.",
+		"This isn't a placeholder!",
+		"Probably not actually copyrighted.",
+		"Meta joke here.",
+		"REALLY GREAT RPG 2 coming soon! I swear!",
+		"Having existential crises since 2013!",
+		"Capitalism is trash. Water is wet.",
+		"Some ferns are green, I'm in a mech,", // TODO: fix this rhyme.
+		"Now contains 100% less JQuery!" // Just wanted to do a jab at JQuery, it's an alright library, but it's pretty bloated.
+	];
+	
 	// Remove whitespace tags
 	clean(document.body);
 	
@@ -39,6 +39,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 		// Underline the page you're on
 		for (i = 0; i < navitems.length; i++) {
 			if (navitems[i].childNodes[0].href == document.location.href) {
+				navitems[i].childNodes[0].href = "#"; // Go to top on click
 				navitems[i].classList.add("here");
 			}
 		}
