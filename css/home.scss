@@ -1,18 +1,16 @@
 ---
 ---
 
-@media (min-width: 64rem) {
-	header {
-		&.heroic {
-			background-color: transparent;
+header {
+	&.heroic {
+		background-color: transparent;
 		
-			a::after {
-				top: 0; bottom: auto;
-			}
+		a::after {
+			top: 0; bottom: auto;
 		}
-		
-		transition: .125s background-color ease-in-out;
 	}
+	
+	transition: .125s background-color ease-in-out;
 }
 
 header + section {
