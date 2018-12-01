@@ -13,7 +13,7 @@ I've only had the GPD Win 2 for 3 weeks now, and I can already tell this is an a
 
 ![The Win 2 itself, taken from the IndieGoGo campaign.]({{ "/assets/win2IndieGoGo.jpg" | absolute_url }})
 
-## Gamepad
+# Gamepad
 
 The buttons, while being a bit of a distance your thumbs have to travel, feel nice to press and the d-pad is tolerable. You'll want to use the sticks, which are **absolutely *PERFECT***... except for one minor nitpick. They're amazing, don't get me wrong, but it sorta feels like the dead zones (am I using that word right) on the analogue sticks are a bit big on both.
 
@@ -27,11 +27,11 @@ The interesting thing is that the gamepad is also the mouse. You switch between 
 
 ![A closeup of the GPD Win 2, highlighting the keyboard. Also, there's the gamepad.]({{ "/assets/win2Closeup.jpg" | absolute_url }})
 
-## Screen
+# Screen
 
 The screen is nice and big (1280x720, to be precise), and has a good amount of brightness. It has Gorilla Glass, so that adds some gloss to the screen, but it's fine by me. It's also a touchscreen, so that helps when you're in gamepad mode and trying to launch Dolphin.
 
-## Ports and Other Inputs
+# Ports and Other Inputs
 
 The Win 2 is equipped with a full-size USB port, a USB-C port for charging and data, a microHDMI port, a microSD card slot, and a headphone jack.
 
@@ -39,11 +39,11 @@ You of course also have the keyboard, which is good. It takes some getting used 
 
 There's also a microphone on the Win 2, which is... good enough. It's actually a bit better than my microphone on my expensive *gamer* laptop.
 
-## Software
+# Software
 
 The Win 2 runs a full version of Windows 10. Of course, Windows 10 isn't designed for this small form factor, but if you bump up the UI scale, it should be pretty usable. You can also enable tablet mode, but that just hides a lot of useful features.
 
-## Speed
+# Speed
 
 The Win 2 is fast and snappy. Equipped with an Intel Core m3-7y30, 128 GB SSD (or more if you have the money) and 4 GB of RAM, it runs apps like Firefox or VS Code like nothing.
 
@@ -64,11 +64,11 @@ If these all sound like your thing, buy this:
 
 You may need to do some tweaking before you get the performance seen in the above videos, but it's still pretty darn impressive, no?
 
-## Battery
+# Battery
 
 The battery has not died on me yet. In around 12 hours of play, I only had to recharge once, making for around 8 hours of life. I don't really run serious games, though. I mainly played N++, Cuphead, and some Gamecube emulation. I've heard from other people that you can expect around 4 hours of SERIOUS GAMING, and about 10 hours of normal usage and light games.
 
-## Overall Build Quality
+# Overall Build Quality
 
 The overall build quality is great. The Win 2 is a bit heavy, but about the same weight as an Xbox controller and a half.
 
@@ -82,17 +82,17 @@ To sum it up, it feels like a 3DS XL merged with an Xbox controller with the Cha
 
 <sup><sup>[Xbox 360 controller with Chatpad](https://commons.wikimedia.org/wiki/File:Xbox_360_Chatpad%2Bcontroller.png) by [Alphathon](https://commons.wikimedia.org/wiki/User:Alphathon).</sup></sup>
 
-## Can you put it in your pocket?
+# Can you put it in your pocket?
 
 Yeah, sorta.
 
-## Should you buy this?
+# Should you buy this?
 
-### ~~No.~~
+## ~~No.~~
 
-### ~~Yes.~~
+## ~~Yes.~~
 
-### No.
+## No.
 
 Yep, I'm sorta back-and-forth about purchasing the Win 2. I love the computer, but it's not for me.
 
