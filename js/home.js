@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 	var headerHeightInPixels = parseInt(getRootStyle("--header-height")) * parseInt(getRootStyle("font-size"));
 	
 	function setHeader() {
-		if (!!window.scrollY) {
+		if (window.scrollY >= 16) {
 			header.classList.remove("heroic")
 		} else {
 			header.classList.add("heroic")
