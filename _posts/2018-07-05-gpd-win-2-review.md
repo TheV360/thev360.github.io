@@ -78,7 +78,7 @@ The display's ribbon cable can get a bit messed up and cause some nasty lines ac
 
 To sum it up, it feels like a 3DS XL merged with an Xbox controller with the Chatpad attached.
 
-![Artist's rendition]({{ "/assets/notTheWin2.png" | absolute_url }})
+![Artist's rendition]({{ "/assets/notTheWin2.jpg" | absolute_url }})
 
 <sup><sup>[Xbox 360 controller with Chatpad](https://commons.wikimedia.org/wiki/File:Xbox_360_Chatpad%2Bcontroller.png) by [Alphathon](https://commons.wikimedia.org/wiki/User:Alphathon).</sup></sup>
 
