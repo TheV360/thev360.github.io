@@ -22,23 +22,28 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 		});
 	});
 	
-	function scrollUpdate() {
+	function parallaxUpdate() {
 		if (window.scrollY <= window.innerHeight) {
 			hero.style.backgroundPositionY = Math.floor(window.scrollY * .3) + "px";
 		}
-			
+		
+		window.requestAnimationFrame(parallaxUpdate);
+	}
+	
+	function headerUpdate() {
 		if (window.scrollY >= Math.floor(window.innerHeight / 4)) {
 			header.className = "";
 		} else {
 			header.className = "heroic";
 		}
 		
-		window.requestAnimationFrame(scrollUpdate);
+		window.requestAnimationFrame(headerUpdate);
 	}
 	
 	if (!/Mobi|Android/i.test(navigator.userAgent)) {
-		scrollUpdate();
+		parallaxUpdate();
 	}
+	headerUpdate();
 });
 
 document.addEventListener("keydown", (e)=>{

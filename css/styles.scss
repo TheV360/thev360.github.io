@@ -408,8 +408,31 @@ header::after,
 		display: block;
 	}
 	
-	header nav#header-nav:not(.show-nav) {
+	header:not(.show-nav) nav#header-nav {
 		display: none;
+	}
+	
+	header {
+		nav#header-nav {
+			display: none;
+		}
+		
+		&.show-nav {
+			nav#header-nav {
+				display: block;
+				
+				width: calc(100% - var(--header-height));
+				height: var(--header-height);
+				
+				overflow-x: scroll;
+				
+				white-space: nowrap;
+			}
+			
+			h6 {
+				display: none;
+			}
+		}
 	}
 	
 	.unimportant {

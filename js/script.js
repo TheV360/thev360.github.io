@@ -25,16 +25,12 @@ window.addEventListener("DOMContentLoaded", ()=>{
 	clean(document.body);
 	
 	if (document.getElementById("header-nav")) {
+		header = document.querySelector("header");
 		togglenav = document.getElementById("toggle-nav");
 		nav = document.getElementById("header-nav");
 		
 		// Get list of nodes in nav (have to first get throught the <ul> tag)
 		navitems = nav.childNodes[0].childNodes;
-		
-		// Hamburger button toggles class
-		togglenav.addEventListener("click", ()=>{
-			nav.classList.toggle("show-nav");
-		});
 		
 		// Underline the page you're on
 		for (i = 0; i < navitems.length; i++) {
@@ -51,6 +47,11 @@ window.addEventListener("DOMContentLoaded", ()=>{
 				navitems[i].classList.add("here");
 			}
 		}
+		
+		// Hamburger button toggles class
+		togglenav.addEventListener("click", (e)=>{
+			header.classList.toggle("show-nav");
+		});
 	}
 	
 	if (document.getElementById("footer-note")) {
