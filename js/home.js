@@ -6,26 +6,27 @@ function getRootStyle(str) {
 }
 
 document.addEventListener("DOMContentLoaded", (e)=>{
-	var enough = false;
-	
 	var header = document.querySelector("header");
+	var hero = document.getElementById("superhero");
 	var projectsButton = document.getElementById("projectsButton");
 	var firstProject = document.querySelector(".showcase");
-	
-	// I'm sorry
-	var headerHeightInPixels = parseInt(getRootStyle("--header-height")) * parseInt(getRootStyle("font-size"));
-	
-	function setHeader() {
+
+	function scrollUpdate() {
+		hero.style.backgroundPositionY = (window.scrollY * .3).toFixed(2) + "px";
+		
 		if (window.scrollY >= window.innerHeight / 4) {
 			header.classList.remove("heroic")
 		} else {
 			header.classList.add("heroic")
 		}
 		
-		enough = false;
+		window.requestAnimationFrame(scrollUpdate);
 	}
 	
-	setHeader();
+	scrollUpdate();
+	
+	// I'm sorry
+	var headerHeightInPixels = parseInt(getRootStyle("--header-height")) * parseInt(getRootStyle("font-size"));
 	
 	projectsButton.addEventListener("click", (e)=>{
 		window.scrollTo({
@@ -33,13 +34,6 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 			left: window.scrollX,
 			behavior: "smooth"
 		});
-	});
-	
-	window.addEventListener("scroll", (e)=>{
-		if (!enough) {
-			window.requestAnimationFrame(setHeader);
-			enough = true;
-		}
 	});
 });
 
