@@ -36,7 +36,9 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 		window.requestAnimationFrame(scrollUpdate);
 	}
 	
-	scrollUpdate();
+	if (!/Mobi|Android/i.test(navigator.userAgent)) {
+		scrollUpdate();
+	}
 });
 
 document.addEventListener("keydown", (e)=>{
