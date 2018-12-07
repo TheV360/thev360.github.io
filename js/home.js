@@ -10,22 +10,6 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 	var hero = document.getElementById("superhero");
 	var projectsButton = document.getElementById("projectsButton");
 	var firstProject = document.querySelector(".showcase");
-
-	function scrollUpdate() {
-		if (window.scrollY <= window.innerHeight) {
-			hero.style.backgroundPositionY = floor(window.scrollY * .3) + "px";
-			
-			if (window.scrollY >= window.innerHeight / 4) {
-				header.classList.remove("heroic")
-			} else {
-				header.classList.add("heroic")
-			}
-		}
-		
-		window.requestAnimationFrame(scrollUpdate);
-	}
-	
-	scrollUpdate();
 	
 	// I'm sorry
 	var headerHeightInPixels = parseInt(getRootStyle("--header-height")) * parseInt(getRootStyle("font-size"));
@@ -37,6 +21,22 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 			behavior: "smooth"
 		});
 	});
+	
+	function scrollUpdate() {
+		if (window.scrollY <= window.innerHeight) {
+			hero.style.backgroundPositionY = Math.floor(window.scrollY * .3) + "px";
+		}
+		
+		if (window.scrollY >= window.innerHeight / 4) {
+			header.classList.remove("heroic");
+		} else {
+			header.classList.add("heroic");
+		}
+		
+		window.requestAnimationFrame(scrollUpdate);
+	}
+	
+	scrollUpdate();
 });
 
 document.addEventListener("keydown", (e)=>{
