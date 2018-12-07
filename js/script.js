@@ -3,7 +3,7 @@
 // Once page loads completely...
 window.addEventListener("DOMContentLoaded", ()=>{
 	var i;
-	var togglenav, nav, navitems;
+	var header, togglenav, nav, navitems;
 	var footernote;
 	
 	const footernotes = [
