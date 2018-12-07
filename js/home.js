@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 	
 	function headerUpdate() {
 		if (window.scrollY >= Math.floor(window.innerHeight / 4)) {
-			header.className = "";
+			header.classList.remove("heroic");
 		} else {
-			header.className = "heroic";
+			header.classList.add("heroic");
 		}
 		
 		window.requestAnimationFrame(headerUpdate);
