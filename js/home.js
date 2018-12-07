@@ -12,12 +12,14 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 	var firstProject = document.querySelector(".showcase");
 
 	function scrollUpdate() {
-		hero.style.backgroundPositionY = (window.scrollY * .3).toFixed(2) + "px";
-		
-		if (window.scrollY >= window.innerHeight / 4) {
-			header.classList.remove("heroic")
-		} else {
-			header.classList.add("heroic")
+		if (window.scrollY <= window.innerHeight) {
+			hero.style.backgroundPositionY = floor(window.scrollY * .3) + "px";
+			
+			if (window.scrollY >= window.innerHeight / 4) {
+				header.classList.remove("heroic")
+			} else {
+				header.classList.add("heroic")
+			}
 		}
 		
 		window.requestAnimationFrame(scrollUpdate);
