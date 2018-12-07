@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 		if (window.scrollY <= window.innerHeight) {
 			hero.style.backgroundPositionY = Math.floor(window.scrollY * .3) + "px";
 		}
-		
-		if (window.scrollY >= window.innerHeight / 4) {
-			header.classList.remove("heroic");
+			
+		if (window.scrollY >= Math.floor(window.innerHeight / 4)) {
+			header.className = "";
 		} else {
-			header.classList.add("heroic");
+			header.className = "heroic";
 		}
 		
 		window.requestAnimationFrame(scrollUpdate);
