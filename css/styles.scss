@@ -92,6 +92,14 @@ header {
 	// Nav Stuff
 	nav#header-nav {
 		float: right;
+				
+		width: calc(100% - var(--header-height));
+		height: var(--header-height);
+		
+		overflow-x: auto;
+		overflow-y: hidden;
+		
+		white-space: nowrap;
 	}
 	
 	#toggle-nav {
@@ -420,14 +428,6 @@ header::after,
 		&.show-nav {
 			nav#header-nav {
 				display: block;
-				
-				width: calc(100% - var(--header-height));
-				height: var(--header-height);
-				
-				overflow-x: auto;
-				overflow-y: hidden;
-				
-				white-space: nowrap;
 			}
 			
 			h6 {
