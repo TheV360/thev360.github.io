@@ -68,6 +68,8 @@ header {
 		padding: 0 .5rem;
 		
 		height: var(--header-height);
+	
+		@extend .unselectable;
 		
 		> * {
 			display: inline-block;
@@ -78,43 +80,44 @@ header {
 			
 			line-height: var(--header-height);
 		}
-	}
 	
-	// That "V360" logo thing that really should be a link
-	h6 {
-		float: left;
+		// That "V360" logo thing that really should be a link
+		h6 {
+			float: left;
+			
+			margin: 0 .5rem;
+			
+			font-size: calc(var(--header-height) - 1rem);
+		}
 		
-		margin: 0 .5rem;
+		// Nav Stuff
+		nav#header-nav {
+			float: right;
+			
+			width: calc(100% - var(--header-height) + 1rem);
+			height: var(--header-height);
+			
+			overflow-x: auto;
+			overflow-y: hidden;
+			
+			white-space: nowrap;
+		}
 		
-		font-size: calc(var(--header-height) - 1rem);
-	}
-	
-	// Nav Stuff
-	nav#header-nav {
-		float: right;
-				
-		width: calc(100% - var(--header-height));
-		height: var(--header-height);
-		
-		overflow-x: auto;
-		overflow-y: hidden;
-		
-		white-space: nowrap;
-	}
-	
-	#toggle-nav {
-		display: none;
-		float: right;
-		
-		margin: .5rem 0 .5rem .5rem;
-		
-		width: calc(var(--header-height) - 1rem);
-		height: calc(var(--header-height) - 1rem);
-		
-		background-image: url("../assets/menu.png");
-		background-position: center;
-		background-size: calc(var(--header-height) - 1.5rem);
-		background-repeat: no-repeat;
+		// Hamburger button
+		div#toggle-nav {
+			display: none;
+			float: right;
+			
+			margin: .5rem 0 .5rem .5rem;
+			
+			width: calc(var(--header-height) - 1rem);
+			height: calc(var(--header-height) - 1rem);
+			
+			background-image: url("../assets/menu.png");
+			background-position: center;
+			background-size: calc(var(--header-height) - 1.5rem);
+			background-repeat: no-repeat;
+		}
 	}
 }
 
@@ -181,10 +184,6 @@ a {
 		}
 	}
 }
-
-/* a:hover {
-	text-decoration: underline;
-} */
 
 img {
 	max-width: 100%;
@@ -326,9 +325,7 @@ div.button-set {
 	
 	background-color: #2f2f2f;
 	
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	user-select: none;
+	@extend .unselectable;
 	
 	cursor: pointer;
 	transition: all .25s ease-out;
@@ -367,6 +364,13 @@ div.button-set {
 		margin-right: .25rem;
 		margin-bottom: .25rem;
 	}
+}
+
+/* Unselectable */
+.unselectable {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
 }
 
 /* ClearFix */
@@ -412,15 +416,11 @@ header::after,
 /* @medias */
 
 @media (max-width: 32rem) {
-	header #toggle-nav {
-		display: block;
-	}
-	
-	header:not(.show-nav) nav#header-nav {
-		display: none;
-	}
-	
 	header {
+		div#toggle-nav {
+			display: block;
+		}
+		
 		nav#header-nav {
 			display: none;
 		}
