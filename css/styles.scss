@@ -123,15 +123,13 @@ header {
 	}
 	
 	&.show-nav {
-		height: calc(var(--header-height) * 2);
+		height: auto;
 		
 		& > div.container {
-			height: calc(var(--header-height) * 2);
+			height: auto;
 			
 			nav#header-nav {
 				display: block;
-				
-				width: 100%;
 			}
 			
 			div#toggle-nav {
