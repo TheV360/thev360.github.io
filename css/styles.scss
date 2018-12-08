@@ -167,17 +167,6 @@ section {
 		
 		box-shadow: 0 .25rem .25rem -.25rem #1f1f1f;
 	}
-	
-	> .container {
-		&:first-child {
-			border-radius: var(--border-radius) var(--border-radius) 0 0;
-		}
-		
-		// Intentional
-		&:last-child {
-			border-radius: 0 0 var(--border-radius) var(--border-radius);
-		}
-	}
 }
 
 footer {
