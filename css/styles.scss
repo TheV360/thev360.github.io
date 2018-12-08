@@ -416,7 +416,7 @@ header::after,
 /* @medias */
 
 @media (max-width: 32rem) {
-	header {
+	header > div.container {
 		div#toggle-nav {
 			display: block;
 		}
