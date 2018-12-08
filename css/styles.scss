@@ -103,6 +103,10 @@ header {
 			overflow-y: hidden;
 			
 			white-space: nowrap;
+			
+			a:focus {
+				outline: 0; // looks bad :(
+			}
 		}
 		
 		// Hamburger button
@@ -172,11 +176,14 @@ a {
 		text-decoration: none;
 		text-indent: 0;
 		
-		transition: outline .25s ease-out;
+		transition: all .25s ease-out;
+		transition-property: outline, background-color;
 	}
 	
 	&:focus {
 		outline: solid .125rem white;
+		
+		background-color: #1f1f1f;
 	}
 	
 	&::after {
