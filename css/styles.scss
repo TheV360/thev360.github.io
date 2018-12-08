@@ -359,6 +359,10 @@ div.button-set {
 	transition: all .25s ease-out;
 	transition-property: color, background-color;
 	
+	&:link {
+		color: white;
+	}
+	
 	&:hover {
 		color: white;
 		background-color: #6f6f6f;
@@ -368,10 +372,6 @@ div.button-set {
 	
 	&:visited {
 		color: #dfdfdf;
-	}
-	
-	&:focus {
-		border-color: white;
 	}
 	
 	&.button-primary {
