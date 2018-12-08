@@ -96,7 +96,7 @@ header {
 			
 			height: var(--header-height);
 			
-			max-width: calc(100% - var(--header-height) + 1rem);
+			max-width: calc(100% - var(--header-height) + .5rem);
 			
 			overflow-x: auto;
 			overflow-y: hidden;
