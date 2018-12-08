@@ -5,7 +5,7 @@ header {
 	&.heroic {
 		background-color: transparent;
 		
-		a::after {
+		&:not(.show-nav) a::after {
 			top: 0; bottom: auto;
 		}
 	}
