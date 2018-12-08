@@ -106,6 +106,17 @@ header {
 			
 			a:focus {
 				outline: 0; // looks bad :(
+				
+				color: white;
+				background-color: transparent;
+				
+				&::after {
+					margin: 0;
+					
+					width: 100%;
+					
+					background-color: white;
+				}
 			}
 		}
 		
