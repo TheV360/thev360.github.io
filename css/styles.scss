@@ -171,6 +171,12 @@ a {
 		
 		text-decoration: none;
 		text-indent: 0;
+		
+		transition: outline .25s ease-out;
+	}
+	
+	&:focus {
+		outline: solid .125rem white;
 	}
 	
 	&::after {
@@ -187,7 +193,7 @@ a {
 		background-color: var(--link-color);
 		
 		transition: all .25s ease-out;
-		transition-property: width, margin;
+		transition-property: width, margin, outline;
 		
 		.here & {
 			transition: none;
@@ -341,9 +347,13 @@ div.button-set {
 	
 	text-decoration: none;
 	
+	color: white;
 	background-color: #2f2f2f;
 	
 	@extend .unselectable;
+	
+	font-size: 1rem;
+	line-height: 1.5;
 	
 	cursor: pointer;
 	transition: all .25s ease-out;
@@ -356,12 +366,12 @@ div.button-set {
 		text-decoration: none;
 	}
 	
-	&:link {
-		color: white;
-	}
-	
 	&:visited {
 		color: #dfdfdf;
+	}
+	
+	&:focus {
+		border-color: white;
 	}
 	
 	&.button-primary {
