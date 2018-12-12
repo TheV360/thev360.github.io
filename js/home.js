@@ -7,7 +7,7 @@ function getRootStyle(str) {
 
 document.addEventListener("DOMContentLoaded", (e)=>{
 	var header = document.querySelector("header");
-	var hero = document.getElementById("superhero");
+	var hero = document.getElementById("superhero-background");
 	var projectsButton = document.getElementById("projectsButton");
 	var firstProject = document.querySelector(".showcase");
 	
