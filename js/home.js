@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 	
 	function parallaxUpdate() {
 		if (window.scrollY <= window.innerHeight) {
-			hero.style.backgroundPositionY = Math.floor(window.scrollY * .3) + "px";
-			//hero.style.transform = "translateY(" + Math.floor(window.scrollY * .3) + "px)";
+			// hero.style.backgroundPositionY = Math.floor(window.scrollY * .3) + "px";
+			hero.style.transform = "translateY(" + Math.floor(window.scrollY * .3) + "px)";
 		}
 		
 		window.requestAnimationFrame(parallaxUpdate);
