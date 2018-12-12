@@ -45,7 +45,7 @@ div#superhero {
 		z-index: -1;
 	}
 	
-	& > *:not(div#superhero-background) {
+	> :not(#superhero-background) {
 		max-width: 24rem;
 		
 		text-align: center;
