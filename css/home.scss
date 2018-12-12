@@ -44,7 +44,7 @@ div#superhero {
 		
 		z-index: -1;
 		
-		will-change: transform;
+		will-change: scroll-position, transform;
 	}
 	
 	> :not(#superhero-background) {
