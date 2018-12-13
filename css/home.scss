@@ -43,8 +43,6 @@ div#superhero {
 		background-repeat: no-repeat;
 		
 		z-index: -1;
-		
-		will-change: scroll-position, transform;
 	}
 	
 	> :not(#superhero-background) {

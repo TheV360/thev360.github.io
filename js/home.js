@@ -41,9 +41,9 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 		window.requestAnimationFrame(headerUpdate);
 	}
 	
-	if (!/Mobi|Android/i.test(navigator.userAgent)) {
+	// if (!/Mobi|Android/i.test(navigator.userAgent)) {
 		parallaxUpdate();
-	}
+	// }
 	headerUpdate();
 });
 
