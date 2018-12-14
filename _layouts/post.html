@@ -30,7 +30,7 @@
 						var scriptElement = document.createElement("script");
 						scriptElement.src = "https://v360github.disqus.com/embed.js";
 						scriptElement.setAttribute("data-timestamp", +new Date());
-						(document.head || document.body).appendChild(s);
+						(document.head || document.body).appendChild(scriptElement);
 					};
 					function disqusUnload() {
 						var thread = document.getElementById("disqus_thread");
