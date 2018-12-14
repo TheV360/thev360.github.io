@@ -17,14 +17,28 @@
 				{% if page.tags.size > 0 %}<aside>Tag{% if page.tags.size > 1 %}s{% endif %}:  {{ page.tags | join: ", " }}</aside>{% endif %}
 				{% if page.comments %}
 				<hr />
-				<div id="disqus_thread"></div>
+				<div id="disqus_thread">
+					<h2>Disqus Comments</h2>
+					<p>To let Disqus have your cookies, click the button below.</p>
+					<div class="button-set">
+						<a class="buttonlike button-primary" href="javascript:disqusLoad();">I'm okay with Disqus using my info.</a>
+						<a class="buttonlike" href="javascript:disqusUnload();">Yeah, no.</a>
+					</div>
+				</div>
 				<script>
-					(function() {
-						var d = document, s = d.createElement("script");
-						s.src = "https://v360github.disqus.com/embed.js";
-						s.setAttribute("data-timestamp", +new Date());
-						(d.head || d.body).appendChild(s);
-					})();
+					function disqusLoad() {
+						var scriptElement = document.createElement("script");
+						scriptElement.src = "https://v360github.disqus.com/embed.js";
+						scriptElement.setAttribute("data-timestamp", +new Date());
+						(document.head || document.body).appendChild(s);
+					};
+					function disqusUnload() {
+						var thread = document.getElementById("disqus_thread");
+						var gone = document.createElement("p");
+						gone.innerHTML = "Disqus comments dismissed.";
+						thread.parentNode.appendChild(gone);
+						thread.remove();
+					};
 				</script>
 				{% endif %}
 			</div>
