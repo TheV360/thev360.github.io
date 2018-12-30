@@ -309,6 +309,12 @@ ol, ul, li {
 	list-style-position: inside;
 }
 
+dl {
+	dt + dd {
+		margin-top: 1em;
+	}
+}
+
 .pagination-previous {
 	float: left;
 }
