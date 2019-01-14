@@ -310,8 +310,8 @@ ol, ul, li {
 }
 
 dl {
-	dt + dd {
-		margin-top: 1em;
+	dt + dd:not(:last-child) {
+		margin-bottom: 1em;
 	}
 }
 
