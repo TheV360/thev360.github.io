@@ -118,6 +118,8 @@ header {
 					width: 100%;
 					
 					background-color: white;
+					
+					border-radius: .0625em .0625em 0 0;
 				}
 			}
 		}
@@ -206,9 +208,10 @@ a {
 		top: auto; bottom: 0;
 		display: block;
 		margin: 0 50%;
+		border-radius: .0625em;
 		
 		width: 0;
-		height: .125rem;
+		height: .125em;
 		
 		background-color: var(--link-color);
 		

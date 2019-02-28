@@ -7,6 +7,8 @@ header {
 		
 		&:not(.show-nav) a::after {
 			top: 0; bottom: auto;
+			
+			border-radius: 0 0 .0625em .0625em;
 		}
 	}
 	
