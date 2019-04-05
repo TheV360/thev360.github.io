@@ -9,7 +9,7 @@
 	<body>
 		{% include header.html %}
 		<section>
-			<div class="container post">
+			<div class="container md">
 				<h1>{{ page.title }}</h1>
 				{% if page.subtitle %}<h3>{{ page.subtitle }}</h3>{% endif %}
 				<aside>{{ page.date | date: "%B %d, %Y" }}{% if page.update %}, updated {{ page.update | date: "%B %d, %Y" }}{% endif %}</aside>

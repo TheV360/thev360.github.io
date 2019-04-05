@@ -12,6 +12,6 @@ I've been programming ever since I was 12. I love programming with SmileBASIC, L
 
 Feel free to <!--DM me on [Twitter](https://twitter.com/V360dev) or -->email me at:
 
-![khan tacked at vee three six tea dot dev]({{ "/assets/email.gif?hey=noSpamPleaseThankYou" | absolute_url }})
+![khan tacked at vee three six tea dot dev]({{ "/assets/email.gif?hey=iRequireNoSpam" | absolute_url }})
 
 Companies, please send me free stuff
