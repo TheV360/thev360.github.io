@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 		"Meta joke here.",
 		"REALLY GREAT RPG 2 coming soon! I swear!",
 		"Having existential crises since 2013!",
-		"Capitalism is trash. Water is wet.",
+		"undefined", // Will replace this with some vaguely anti-capitalist garbage soon
 		"Some ferns are green, I'm in a mech,", // TODO: fix this rhyme.
 		"Now contains 100% less JQuery!" // Just wanted to do a jab at JQuery, it's an alright library, but it's pretty bloated...
 	];
