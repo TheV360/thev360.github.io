@@ -17,4 +17,4 @@ plugins:
   - jekyll-feed
 
 feed:
-  path: "/blog/atom.xml"
+  path: "/blog/feed.xml"
