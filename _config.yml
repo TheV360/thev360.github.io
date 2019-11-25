@@ -4,14 +4,17 @@ description: V360's projects and blog!
 
 defaults:
   scope:
-    path: "blog/"
+    path: "/blog/"
   values:
     layout: "post"
 
 excerpt_separator: <!--more-->
 paginate: 8
 paginate_path: "/blog/:num/"
-permalink: /blog/:year/:month/:day/:title/
+permalink: "/blog/:year/:month/:day/:title/"
 
 plugins:
   - jekyll-feed
+
+feed:
+  path: "/blog/atom.xml"

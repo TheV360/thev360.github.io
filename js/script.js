@@ -7,17 +7,16 @@ window.addEventListener("DOMContentLoaded", ()=>{
 	var footernote;
 	
 	const footernotes = [
-		"Sincerely, a Minecraft fan.",
 		"Thank.",
-		"What's happening, fellow gamers?",
 		"This is a randomly chosen footer note.",
 		"This isn't a placeholder!",
 		"Probably not actually copyrighted.",
 		"Meta joke here.",
 		"REALLY GREAT RPG 2 coming soon! I swear!",
+		"Making weird garbage since 2013!",
 		"Having existential crises since 2013!",
 		"undefined", // Will replace this with some vaguely anti-capitalist garbage soon
-		"Some ferns are green, I'm in a mech,", // TODO: fix this rhyme.
+		"Some ferns are green, I'm in a mech, // TODO: fix for 2020",
 		"Now contains 100% less JQuery!" // Just wanted to do a jab at JQuery, it's an alright library, but it's pretty bloated...
 	];
 	
