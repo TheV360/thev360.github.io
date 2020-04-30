@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 		"Having existential crises since 2013!",
 		"undefined", // Will replace this with some vaguely anti-capitalist garbage soon
 		"Some ferns are green, I'm in a mech, // TODO: fix for 2020",
-		"Now contains 100% less JQuery!" // Just wanted to do a jab at JQuery, it's an alright library, but it's pretty bloated...
+		"<span title=\"It's just a SmileBASIC program that looks like a brick message.\">No 3DSes were harmed in the creation of the Hero image.</span>"
 	];
 	
 	// Remove whitespace tags
