@@ -422,6 +422,23 @@ div.button-set {
 	}
 }
 
+a.neocities {
+	> img {
+		image-rendering: optimizeSpeed;
+		image-rendering: crisp-edges;
+		image-rendering: pixelated;
+	}
+	
+	position: fixed;
+	display: block;
+	left: 0; bottom: 0;
+	width: 88px; height: 31px;
+	
+	&::after {
+		content: none !important;
+	}
+}
+
 /* Unselectable */
 .unselectable {
 	-webkit-user-select: none;
